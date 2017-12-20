@@ -1,0 +1,1474 @@
+﻿"<h1>1
+</h1></span><span
+style='font-family:宋体'>一个“客户</span><span lang=EN-US>-</span><span
+style='font-family:宋体'>服务器”系统的性能受到两个网络因素的影响：网络带宽（每秒传输多少位）和延迟（第</span><span
+lang=EN-US>1</span><span style='font-family:宋体'>位从客户传播到服务器花多少秒时间）。试给出一个具有高带宽高延迟的网络例子，再给出一个具有低带宽低延迟的网络例子。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>跨洲的光纤链路可能具有每秒数个千兆位的带宽，但由于光在数千公里的距离上传播，延迟值也会很高。相反，呼叫在同一建筑物内的一台计算机的一条</span><span
+lang=EN-US>56Kbps</span><span style='font-family:宋体'>的</span><span lang=EN-US>modem</span><span
+style='font-family:宋体'>链路具有低的带宽和低的延迟。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>2
+</h1></span><span
+style='font-family:宋体'>一个“客户</span><span lang=EN-US>-</span><span
+style='font-family:宋体'>服务器”系统使用卫星网络，卫星的高度是</span><span lang=EN-US>40000</span><span
+style='font-family:宋体'>公里，试问就对请求的响应而言，最好情况下的延迟是多少？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>请求必须上行和下行，响应也必须上行和下行，因此经过的总通路长度是</span><span lang=EN-US>4000</span><span
+lang=EN-US style='font-family:宋体'>0×4=160000公里。光在空气和真空中的速度是300000公里/秒，仅传播延迟就等于160000÷300000≈0.533秒，即533毫秒。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>3
+</h1></span><span
+style='font-family:宋体'>除了带宽和延迟，还需要什么其他参数，才能很好地特征化一个用于数字化话音交通的网络所提供的服务质量？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>话音需要均匀的投递时间，因此在网络中抖动的时间量是重要的。这可能被表示成标准的投递时间偏移。延迟短但变化大的条件实际上要比延迟长一些但变化小的条件更坏。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>4
+</h1></span><span
+style='font-family:宋体'>试说明队列头阻塞的含义。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>队列头阻塞的发生意味着在缓冲区中积累起来的等待到同一输出的分组阻止排在其后的其他分组得到前往它们的输出端的机会。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>5
+</h1></span><span
+style='font-family:宋体'>什么是输出阻塞？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>在输出阻塞的情况下，两个输入竞争同一输出端口，其中有一个将得不到对输出的访问。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>6
+</h1></span><span
+style='font-family:宋体'>局域网的一个替代方案是大型的分时系统，该分时系统带有多个终端，连接所有的用户。请给出使用局域网的客户<span
+lang=EN-US>-服务器系统的两个优点。</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>局域网模型可以递增扩展，且整个系统不会因单点的故障而崩溃（如果有备份服务器的话）。它可能廉价一些（低成本），并提供更多的计算能力和更好的交互式接口。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>7
+</h1></span><span
+style='font-family:宋体'>举出使用分层协议的两条理由。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>通过协议分层可以把设计问题划分成较小的易于处理的片段。分层意味着某一层协议的改变不会影响较高层或较低层的协议。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>8
+</h1></span><span
+style='font-family:宋体'>一个系统的协议结构有<span lang=EN-US>n层。应用程序产生M字节长的报文。网络软件在每层都加上h字节长的协议头。那么，网络带宽中有多大比率用于协议头信息的传输。</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>总共有n层，每层加h字节，在每个报文上附加的头字节总数等于hn，因此头消耗的有关空间所占网络带宽的比率为hn/(M+hn)。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>9
+</h1></span><span
+style='font-family:宋体'>给出分组元数据的例子。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>作为元数据信息的一个例子是包含在一个分组的头段中的目标和源地址。对于桥接器和交换机而言，这些地址是MAC地址。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>10
+</h1></span><span
+style='font-family:宋体'>在计算机网络中术语“命名”的含义是什么？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>命名是为设备分配一个具惟一性的网络名字的过程。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>11
+</h1></span><span
+style='font-family:宋体'>网络体系结构可以定义成：</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>A、一种计算机网络的实现</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>B、执行计算机数据处理的软件模块</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>C、建立和使用能通信硬件和软件的一套规则和规范</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>D、由ISO（国际标准化组织）制定一个标准</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>C</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>12
+</h1></span><span
+style='font-family:宋体'>下列哪一项描述了网络体系结构中的分层概念：</span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:宋体'>A、<span
+style='font:7.0pt ""Times New Roman""'>&nbsp; </span></span><span
+style='font-family:宋体'>保持网络灵活且易于修改</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>B、所有的网络体系结构都使用相同的层次名称和功能</span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:宋体'>B、<span
+style='font:7.0pt ""Times New Roman""'>&nbsp; </span></span><span
+style='font-family:宋体'>把相关的网络功能组合在一层中</span></p>
+
+<p class=MsoNormal align=left style='margin-left:18.0pt;text-align:left;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:宋体'>C、<span
+style='font:7.0pt ""Times New Roman""'>&nbsp; </span></span><span lang=EN-US
+style='font-family:宋体'>A和C</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>D</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>13
+</h1></span><span
+style='font-family:宋体'>在<span lang=EN-US>OSI 第几层分别处理下面的问题：</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>A、将待传输的比特流划分成帧</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>B、决定使用哪条路径通过子网</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>C、传输线上的位流信号同步</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>D、两端用户间传输文件</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>A、第2层（数据链路层）将待传输的比特流划分成帧</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>B、第3层（网络层）决定使用哪条路径通过子网</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>C、第1层（物理层）处理传输线上的位流信号同步</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>D、第7层（应用层）处理两端用户间的文件传输</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>14
+</h1></span><span
+style='font-family:宋体'>在下列功能中，那一个最好地描述了<span lang=EN-US>OSI模型的数据链路层?</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>A、保证数据正确的顺序、无错和完整</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>B、处理信号通过介质的传输</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>C、提供用户跟网络的接口</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>D、控制报文通过网络的路由选择</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'>A</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>15
+</h1></span><span
+lang=EN-US style='font-family:宋体'> OSI模型的物理层负责下列哪一种功能：</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>A、格式化报文</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>B、为数据选择通过网络的路由</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>C、定义连接到介质的特征</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>D、提供远程文件访问能力</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'></span><span lang=EN-US>C</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>16
+</h1>ISO</span><span
+style='font-family:宋体'>提出</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>模型是为了：</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>A</span><span
+style='font-family:宋体'>、建立一个设计作任何网络结构都必须遵从的绝对标准</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>B</span><span
+style='font-family:宋体'>、克服多厂商网络固有的通信问题</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>C</span><span
+style='font-family:宋体'>、证明没有分层的网络结构是不可行的</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>D</span><span
+style='font-family:宋体'>、</span><span lang=EN-US>a</span><span style='font-family:
+宋体'>和</span><span lang=EN-US>b</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>E</span><span
+style='font-family:宋体'>、上列陈述都不是</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>B</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>17
+</h1></span><span
+style='font-family:宋体'>在不同网络节点的对等层之间的通信需要下列哪一项？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>A</span><span
+style='font-family:宋体'>、模块接口</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>B</span><span
+style='font-family:宋体'>、对等层协议</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>C</span><span
+style='font-family:宋体'>、电信号</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>D</span><span
+style='font-family:宋体'>、传输介质</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>B</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>18
+</h1></span><span
+style='font-family:宋体'>试描述</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>模型中信息流动的过程。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>发送进程有些数据要传给接收进程，它把数据交给了应用层，应用程序在数据前面加上应用层报头，即应用层的协议控制信息，再把结果交给表示层。表示层可能以各种方式对应用层的报文进行各式转换，并且可能也要在报文前面加上一个协议控制信息（报文头），并把所得的结果交给会话层。有一点在这里是很重要的，即表示层并不知道而且也不知道应用层交给它的数据中哪一个部分是应用层的头，哪一个部分是真正的用户数据。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>这一过程重复进行下去，亦即当报文通过源节点的各个网络层次时，每层的协议实体都给它加上控制信息。报文抵达源节点的物理层之后，信息以物理信号的形式通过物理链路发射。报文通过物理线路到达网络中的第一个中转节点，在那里向上通过三个层次到了网络层后返回，接着又在第二条物理链路上被送往一个中转节点。这个过程在网络中沿信息传送路径反复进行，直到报文抵达目标节点。在接收机里，当信息向上传递时，各种协议控制信息被一层一层地剥去。最后数据到达接收进程。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>整个过程中最关键的概念是，虽然数据的实际传输方向是垂直的，但每一层在进行程序设计时都好像数据一直是水平传输的。例如，当发送方的运输从会话层得到报文时，它加上一个运输层报头，并把报文发送给接收方的运输层。从发送方运输层的观点来看，实际上它必须把报文传给本机内的网络层，但这一事实只是不重要的技术细节。如同一位说非通用语的外交官在联合国发言时，他认为自己是在向在座的其他外交官致词。事实上，他仅是在向自己的翻译讲话，也许只有翻译能够明白他在讲什么内容；然而这并不妨碍他和别的外交官交流，因为这仅仅是一个技术细节。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>19
+</h1></span><span
+style='font-family:宋体'>在下列每一个</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>层的名称前面标上一个正确的字母序号，使得每一个名称跟你认为最恰当的描述相匹配。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>（</span><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:宋体'>）应用层（</span><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:宋体'>）表示层（　　　　　）会话层（　　　　　）运输层（　　　　　）网络层（</span><span
+lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-family:
+宋体'>）数据链路层（</span><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:宋体'>）物理层</span></p>
+
+<p class=MsoNormal align=left style='margin-left:6.0pt;text-align:left'><span
+lang=EN-US>A</span><span style='font-family:宋体'>、指定在网络上沿着网络链路相邻节点之间移动数据的技术</span></p>
+
+<p class=MsoNormal align=left style='margin-left:6.0pt;text-align:left'><span
+lang=EN-US>B</span><span style='font-family:宋体'>、在通信应用进程之间组织和构造交互作用</span></p>
+
+<p class=MsoNormal align=left style='margin-left:6.0pt;text-align:left'><span
+lang=EN-US>C</span><span style='font-family:宋体'>、提供分布式处理和访问</span></p>
+
+<p class=MsoNormal align=left style='margin-left:6.0pt;text-align:left'><span
+lang=EN-US>D</span><span style='font-family:宋体'>、在由许多开放系统构成的环境中允许网络实体之间进行通信</span></p>
+
+<p class=MsoNormal align=left style='margin-left:6.0pt;text-align:left'><span
+lang=EN-US>E</span><span style='font-family:宋体'>、将系统连接到物理通信介质</span></p>
+
+<p class=MsoNormal align=left style='margin-left:6.0pt;text-align:left'><span
+lang=EN-US>F</span><span style='font-family:宋体'>、协调数据和数据格式的转换，以满足应用进程的需要</span></p>
+
+<p class=MsoNormal align=left style='margin-left:6.0pt;text-align:left'><span
+lang=EN-US>G</span><span style='font-family:宋体'>、在端点系统之间传送数据，并且有错误恢复和流控功能</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>C|F|B|G|D|A|E</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>20
+</h1></span><span
+style='font-family:宋体'>在下列每个空白处填上一个阿拉伯数字（</span><span lang=EN-US>1</span><span
+style='font-family:宋体'>～</span><span lang=EN-US>6</span><span style='font-family:
+宋体'>），表示源节点的一个用户发送一个信息给目标节点的一个用户所发生的事件顺序。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>当信息通过源节点时，每一层都给它加上控制信息</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>在源节点的网络用户产生信息</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>在目标节点的网络用户接收信息</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>信息向上通过目标节点的各个网络层次，每一层都除去它的控制信息</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>信息以电信号的形式通过物理链路发射</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>信息传给源节点的最高层（</span><span lang=EN-US>OSI</span><span style='font-family:
+宋体'>模型的应用层）</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><u><span lang=EN-US>3</span></u><span
+style='font-family:宋体'>当信息通过源节点时，每一层都给它加上控制信息</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><u><span lang=EN-US>1</span></u><span
+style='font-family:宋体'>在源节点的网络用户产生信息</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><u><span lang=EN-US>6</span></u><span
+style='font-family:宋体'>在目标节点的网络用户接收信息</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><u><span lang=EN-US>5</span></u><span
+style='font-family:宋体'>信息向上通过目标节点的各个网络层次，每一层都除去它的控制信息</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><u><span lang=EN-US>4</span></u><span
+style='font-family:宋体'>信息以电信号的形式通过物理链路发射</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><u><span lang=EN-US>2</span></u><span
+style='font-family:宋体'>信息传给源节点的最高层（</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>模型的应用层）</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>21
+</h1></span><span
+style='font-family:宋体'>有确认服务和无确认服务之间的差别是什么？在下列情况下，请说出哪些可能是有确认服务或无确认服务？哪些两者皆可？哪些两者皆不可？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>A</span><span
+style='font-family:宋体'>、连接建立</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>B</span><span
+style='font-family:宋体'>、数据传输</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>C</span><span
+style='font-family:宋体'>、连接释放</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>在有确认服务中，作为对请求原语的反应，接收方要发出一个明确的响应原语。具体地讲，有确认服务包括请求、指示、响应和证实</span><span
+lang=EN-US>4</span><span style='font-family:宋体'>个原语，而无确认服务则只有请求和指示</span><span
+lang=EN-US>2</span><span style='font-family:宋体'>个原语。连接服务总是有确认服务，因为远程对等实体必须同意才能建立连接。在所绘出的</span><span
+lang=EN-US>3</span><span style='font-family:宋体'>个例子中，（</span><span lang=EN-US>a</span><span
+style='font-family:宋体'>）必须是有确认服务；取决于网络设计者的选择，（</span><span lang=EN-US>b</span><span
+style='font-family:宋体'>）和（</span><span lang=EN-US>c</span><span
+style='font-family:宋体'>）可以是有确认服务，也可以是无确认服务。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>22
+</h1>TCP/IP</span><span
+style='font-family:宋体'>位于</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>模型的什么层次？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>TCP/IP</span><span
+style='font-family:宋体'>中最主要的协议</span><span lang=EN-US>IP</span><span
+style='font-family:宋体'>位于</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>模型的第</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>层，即网络层。然而实际上，</span><span lang=EN-US>TCP/IP</span><span
+style='font-family:宋体'>是由许多独立协议组成的一个协议族，它包括运行在相当于</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>第</span><span lang=EN-US>4</span><span style='font-family:
+宋体'>层（运输层，也称传输层）的</span><span lang=EN-US>TCP</span><span style='font-family:
+宋体'>和</span><span lang=EN-US>UDP</span><span style='font-family:宋体'>。运输层的上面是应用层，它包含所有的高层协议。最早引入应用层的是虚拟终端协议、文件传输协议和电子表邮件协议。后来又增加了不少协议，例如</span><span
+lang=EN-US>NNTP</span><span style='font-family:宋体'>协议，用于传递新闻文章；还有</span><span
+lang=EN-US>HTTP</span><span style='font-family:宋体'>协议，用于在环球网上获取主页等。总起来讲，</span><span
+lang=EN-US>TCP/IP</span><span style='font-family:宋体'>的应用层相当于</span><span
+lang=EN-US>OSI</span><span style='font-family:宋体'>的最高</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>层，即会话层、表示层和应用层的结合。在</span><span lang=EN-US>TCP/IP</span><span
+style='font-family:宋体'>协议族中还有许多协议是专门设计用来招待管理功能的，例如</span><span lang=EN-US>ICMP</span><span
+style='font-family:宋体'>就是这样的一个协议；也有的协议是用来方便层间通信的，例如</span><span lang=EN-US>ARP</span><span
+style='font-family:宋体'>和</span><span lang=EN-US>DNS</span><span
+style='font-family:宋体'>就属于这类协议。另外，在</span><span lang=EN-US>IP</span><span
+style='font-family:宋体'>下面的网络接口层似乎与</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>的数据链路层和物理层相对应，但实际上</span><span lang=EN-US>TCP/IP</span><span
+style='font-family:宋体'>本身并没有真正描述这一部分，只是指出主机必须使用某种协议与网络连接，以便能在其上传递</span><span
+lang=EN-US>IP</span><span style='font-family:宋体'>分组。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>23
+</h1></span><span
+style='font-family:宋体'>什么是服务原语？服务原语的三要素是什么？服务原语的类型有哪几种？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>服务原语是某一层对其相邻上层所提供服务的描述形式，每个原语都带有一套相关的服务参数。服务是通过一组服务原语来执行的，原语供用户和其他实体访问该服务时调用。它们被用来通知服务提供者采取某些行动或向其相邻土层报告某个对等实体的活动。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>服务原语包括原语类型、被呼和主呼地址以及用户数据三个主要元素。原语名字则包含原语类型和提供服务的标识，如</span><span
+lang=EN-US>T_CONNECT.request</span><span style='font-family:宋体'>是由传输服务用户——即会话层——发出的一个请求原语，其目的是要跟远方用户（会话层）建立一种（逻辑的）传输连接，而</span><span
+lang=EN-US>S_DATA.indication</span><span style='font-family:宋体'>是由对等（通信）会话层发给它上面的表示层的一个指示原语，并且涉及从远方表示层收到的数据。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.75pt'><span
+style='font-family:宋体'>服务原语的类型有请求原语、指示原语、响应原语和证实原语。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.75pt'><span
+lang=EN-US></a>"
+"<h1>24
+　　</h1></span><span style='font-family:宋体'>在下列情况下，计算传送</span><span
+lang=EN-US>1000KB</span><span style='font-family:宋体'>文件所需要的总时间，即从开始传送时起直到文件的最后一位到达目的地为止的时间。假定往返时间</span><span
+lang=EN-US>RTT</span><span style='font-family:宋体'>是</span><span lang=EN-US>100</span><span
+style='font-family:宋体'>毫秒，一个分组是</span><span lang=EN-US>1KB</span><span
+style='font-family:宋体'>（即</span><span lang=EN-US>1024</span><span
+style='font-family:宋体'>字节）的数据，在开始传送整个文件数据之前进行的起始握手过程需要</span><span lang=EN-US
+style='font-family:宋体'>2×RTT的时间。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>（<span lang=EN-US>a）带宽是1.5Mbps，数据分组可连续发送。</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>（<span lang=EN-US>b）带宽是1.5Mbps，但在结束发送每一个数据分组之后，必须等待一个RTT才能发送下一个数据分组。</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>（</span><span lang=EN-US>c</span><span style='font-family:宋体'>）带宽是无限大的值，即我们取发送时间为</span><span
+lang=EN-US>0</span><span style='font-family:宋体'>，并且在等待每个</span><span
+lang=EN-US>RTT</span><span style='font-family:宋体'>后可发送多达</span><span
+lang=EN-US>20</span><span style='font-family:宋体'>个分组。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>（<span lang=EN-US>d）带宽是无限大的值，在紧接起始握手后我们可以发送一个分组，此后，在第一次等待RTT后可发送</span></span><span
+lang=EN-US><sub><img width=16 height=20 src=""A0400005_001.files/image001.gif""></sub></span><span
+style='font-family:宋体'>个分组，在第二次等待<span lang=EN-US>RTT后可发送</span></span><span
+lang=EN-US><sub><img width=19 height=20 src=""A0400005_001.files/image002.gif""></sub></span><span
+style='font-family:宋体'>分组……在第</span><span lang=EN-US>n</span><span
+style='font-family:宋体'>次等待</span><span lang=EN-US>RTT</span><span
+style='font-family:宋体'>后可发送</span><span lang=EN-US><sub><img width=19
+height=20 src=""A0400005_001.files/image003.gif""></sub></span><span
+style='font-family:宋体'>个分组。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+lang=EN-US style='font-family:宋体'>(a)2个起始的RTT：100×2=200毫秒</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.75pt'><span
+style='font-family:宋体'>传输时间：<span lang=EN-US>RTT÷2=100÷2=50毫秒</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US>1KB=8</span><span style='font-family:宋体'>比特×</span><span lang=EN-US>1024=8192</span><span
+style='font-family:宋体'>比特</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>发送时间：</span><span lang=EN-US>1000K</span><span
+lang=EN-US style='font-family:宋体'>B÷1.5Mbps=8192000比特÷1500，000比特/秒≈5.46秒</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>所以，总时间约等于<span lang=EN-US>0.2+5.46+0.05=5.71秒。</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>(b)在上一小题（a）答案的基础上再增加999个RTT</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US style='font-family:宋体'>5.71+999×0.1=105.61秒。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>所以，总时间是<span lang=EN-US>105.61秒。</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(c)1000KB</span><span
+style='font-family:宋体'>÷<span lang=EN-US>1KB=1000分组&nbsp;&nbsp;&nbsp;&nbsp;
+1000分组÷20分组个RTT</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US style='font-family:宋体'>50-1=49个RTT</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US style='font-family:宋体'>2×RTT+49RTT+0.5RTT=51.5RTT=0.1×51.5=5.15秒。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(d)</span><span
+style='font-family:宋体'>取</span><span lang=EN-US>n=9</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US><sub><img width=215 height=21 src=""A0400005_001.files/image004.gif""></sub></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>这样我们就可以发送所有的</span><span lang=EN-US>1000</span><span
+style='font-family:宋体'>个分组，而且在第</span><span lang=EN-US>9</span><span
+style='font-family:宋体'>次等待</span><span lang=EN-US>RTT</span><span
+style='font-family:宋体'>后只需发送（</span><span lang=EN-US>512-23</span><span
+style='font-family:宋体'>）个分组就可以了。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US>2RTT+9RTT+0.5RTT=11.5RTT</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US>0.</span><span lang=EN-US style='font-family:宋体'>1×11.5=1.15秒</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>即总的延迟是<span lang=EN-US>1.15秒。</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US></a>"
+"<h1>25
+　　</h1></span><span style='font-family:宋体'>考虑一个最大距离为<span lang=EN-US>2公里的局域网，当带宽等于多大时传播延时（传播速度为2×</span></span><span
+lang=EN-US><sub><img width=24 height=21 src=""A0400005_001.files/image005.gif""></sub></span><span
+style='font-family:宋体'>米</span><span lang=EN-US>/</span><span style='font-family:
+宋体'>秒</span><span style='font-family:宋体'>）等于<span lang=EN-US>100字节分组的发送延时？对于512字节分组结果又当如何？</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'></span><span style='font-family:宋体'>传播延迟等于：</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US><sub><img width=44 height=21 src=""A0400005_001.files/image006.gif""></sub></span><span
+style='font-family:宋体'>米÷（</span><span lang=EN-US><sub><img width=44 height=21
+src=""A0400005_001.files/image007.gif""></sub></span><span style='font-family:
+宋体'>米</span><span lang=EN-US>/</span><span style='font-family:宋体'>秒）</span><span
+lang=EN-US>=<sub><img width=29 height=21 src=""A0400005_001.files/image008.gif""></sub></span><span
+style='font-family:宋体'>秒</span><span lang=EN-US>=10</span><span
+style='font-family:宋体'>微秒</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US>100</span><span style='font-family:宋体'>字节÷</span><span lang=EN-US>10</span><span
+style='font-family:宋体'>微秒</span><span lang=EN-US>=</span><span
+ lang=EN-US>10M</span><span style='font-family:宋体'>字节</span><span lang=EN-US>/</span><span
+style='font-family:宋体'>秒</span><span lang=EN-US>=</span><span
+ lang=EN-US>80M</span><span style='font-family:宋体'>位</span><span lang=EN-US>/</span><span
+style='font-family:宋体'>秒</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US>512</span><span style='font-family:宋体'>字节÷</span><span lang=EN-US>10</span><span
+style='font-family:宋体'>微秒</span><span lang=EN-US>=</span><span
+ lang=EN-US>51.2M</span><span style='font-family:宋体'>字节</span><span lang=EN-US>/</span><span
+style='font-family:宋体'>秒</span><span lang=EN-US>=</span><span
+ lang=EN-US>409.6M</span><span style='font-family:宋体'>位</span><span lang=EN-US>/</span><span
+style='font-family:宋体'>秒</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>因此，带宽应分别等于</span><span
+ lang=EN-US>80M</span><span style='font-family:宋体'>位</span><span lang=EN-US>/</span><span
+style='font-family:宋体'>秒和</span><span
+ lang=EN-US>409.6M</span><span style='font-family:宋体'>位</span><span lang=EN-US>/</span><span
+style='font-family:宋体'>秒。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>26
+</h1></span><span
+style='font-family:宋体'>假定有一个通信协议，每个分组都引入</span><span lang=EN-US>100</span><span
+style='font-family:宋体'>字节的开销用于头和成帧。现在使用这个协议发送</span><span
+ lang=EN-US>1M</span><span style='font-family:宋体'>字节的数据，然而在传送中的过程中有一个字节被破坏了，因而包含该字节的那个分组被丢弃。试对于</span><span
+lang=EN-US>1000</span><span style='font-family:宋体'>、</span><span lang=EN-US>5000</span><span
+style='font-family:宋体'>、</span><span lang=EN-US>10000</span><span
+style='font-family:宋体'>和</span><span lang=EN-US>20000</span><span
+style='font-family:宋体'>字节的分组数据大小分别计算“开销</span><span lang=EN-US>+</span><span
+style='font-family:宋体'>丢失”字节的总数目？分组数据大小的最佳值是多少？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>设</span><span lang=EN-US>D</span><span style='font-family:
+宋体'>是分组数据的大小，那么所需要的分组数目</span><span lang=EN-US><sub><img width=77 height=21
+src=""A0400005_001.files/image009.gif""></sub></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>开销</span><span lang=EN-US>=10</span><span lang=EN-US
+style='font-family:宋体'>0×N（被丢弃分组的头部也已计入开销）</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>所以，开销<span lang=EN-US>+丢失=</span></span><span
+lang=EN-US><sub><img width=59 height=21 src=""A0400005_001.files/image010.gif""></sub>/D+D</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=284 valign=top style='width:213.05pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+  宋体'>分组数据大小</span><span lang=EN-US>D</span></p>
+  </td>
+  <td width=284 valign=top style='width:213.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+  宋体'>开销</span><span lang=EN-US>+</span><span style='font-family:宋体'>丢弃</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=284 valign=top style='width:213.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>1000</span></p>
+  </td>
+  <td width=284 valign=top style='width:213.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>101000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=284 valign=top style='width:213.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>5000</span></p>
+  </td>
+  <td width=284 valign=top style='width:213.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>25000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=284 valign=top style='width:213.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>10000</span></p>
+  </td>
+  <td width=284 valign=top style='width:213.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>20000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=284 valign=top style='width:213.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>20000</span></p>
+  </td>
+  <td width=284 valign=top style='width:213.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>25000</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US><sub><img width=49 height=24 src=""A0400005_001.files/image011.gif""></sub>/D+D</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US><sub><img width=85 height=44 src=""A0400005_001.files/image012.gif""></sub></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>当</span><span lang=EN-US>D=<sub><img width=24 height=21
+src=""A0400005_001.files/image013.gif""></sub></span><span style='font-family:
+宋体'>时，</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US><sub><img width=28 height=41 src=""A0400005_001.files/image014.gif""></sub>=0</span><span
+style='font-family:宋体'>，所以</span><span lang=EN-US>D</span><span
+style='font-family:宋体'>的最佳值是</span><span lang=EN-US>10000</span><span
+style='font-family:宋体'>字节。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>27
+</h1></span><span
+style='font-family:宋体'>计算在下列情况下延迟（从发出第</span><span lang=EN-US>1</span><span
+style='font-family:宋体'>位开始到收到最后</span><span lang=EN-US>1</span><span
+style='font-family:宋体'>位为止）：</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:15.75pt'><span
+style='font-family:宋体'>（</span><span lang=EN-US>a</span><span style='font-family:
+宋体'>）在通路上配置</span><span lang=EN-US>1</span><span style='font-family:宋体'>个存储转发交换机的</span><span
+lang=EN-US>10Mbps</span><span style='font-family:宋体'>以太网，分组大小是</span><span
+lang=EN-US>5000</span><span style='font-family:宋体'>位。假定每条链路引入</span><span
+lang=EN-US>10</span><span style='font-family:宋体'>微秒的传播延迟，并且交换机在接收完分组之后立即重发。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:15.75pt'><span
+style='font-family:宋体'>（</span><span lang=EN-US>b</span><span style='font-family:
+宋体'>）跟（</span><span lang=EN-US>a</span><span style='font-family:宋体'>）的情况类似，但有</span><span
+lang=EN-US>3</span><span style='font-family:宋体'>个交换机。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:15.75pt'><span
+style='font-family:宋体'>（<span lang=EN-US>c）跟（a）的情况相同，但假定交换机实施“直通”交换：它可以在收到分组的开头200位后就重发分组。</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'><a style='color:red'></span><span lang=EN-US>(a)1</span><span
+style='font-family:宋体'>位的发送延迟是</span><span lang=EN-US>0.1<sub><img width=16
+height=17 src=""A0400005_001.files/image015.gif""></sub>s</span><span
+style='font-family:宋体'>，一个分组由</span><span lang=EN-US>5000</span><span
+style='font-family:宋体'>位组成，在每条链路上引入的发送延迟是</span><span lang=EN-US>500<sub><img
+width=16 height=17 src=""A0400005_001.files/image015.gif""></sub>s</span><span
+style='font-family:宋体'>，分组在每条链路上的传播延迟都是</span><span lang=EN-US>10<sub><img
+width=16 height=17 src=""A0400005_001.files/image015.gif""></sub>s</span><span
+style='font-family:宋体'>，因此总的延迟等于：</span><span lang=EN-US>50</span><span
+lang=EN-US style='font-family:宋体'>0×2+10×2=1020<sub><img width=16 height=17
+src=""A0400005_001.files/image015.gif""></sub>s。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(b)3</span><span
+style='font-family:宋体'>个交换机共有</span><span lang=EN-US>4</span><span
+style='font-family:宋体'>条链路，总的延迟等于：</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US>500</span><span style='font-family:宋体'>×<span lang=EN-US>4+10×4=2040<sub><img
+width=16 height=17 src=""A0400005_001.files/image015.gif""></sub>s=2.04ms。</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-family:宋体'>(c)使用直通交换，交换机延迟分组200位，即20<sub><img width=16 height=17
+src=""A0400005_001.files/image015.gif""></sub>s。在这种情况下仍然有1个500<sub><img width=16
+height=17 src=""A0400005_001.files/image015.gif""></sub>s的发送延迟，2个10<sub><img
+width=16 height=17 src=""A0400005_001.files/image015.gif""></sub>s的传播延迟，再加上20<sub><img
+width=16 height=17 src=""A0400005_001.files/image015.gif""></sub>s的交换机转发延迟，因此总的延迟等于500×1+10×2+20=540<sub><img
+width=16 height=17 src=""A0400005_001.files/image015.gif""></sub>s。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+style='font-family:宋体'>如果像（<span lang=EN-US>b）那样有3个交换机，那么总的延迟将会等于500×1+10×4+20×3=600<sub><img
+width=16 height=17 src=""A0400005_001.files/image015.gif""></sub>s。</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>28
+</h1></span><span
+style='font-family:宋体'>计算在下列情况下的有效带宽。对于（<span lang=EN-US>a）和（b）假定有一个稳定的数据源供发送；对于（c）只要计算在12小时内的平均值即可。</span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>（</span><span lang=EN-US>a</span><span style='font-family:宋体'>）</span><span
+lang=EN-US>100Mbps</span><span style='font-family:宋体'>以太网通过了</span><span
+lang=EN-US>3</span><span style='font-family:宋体'>个存储转发交找机，交换机在一条链路上接收的同时可以在另一条链路上发送。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(b)</span><span
+style='font-family:宋体'>跟</span><span lang=EN-US>(a)</span><span
+style='font-family:宋体'>中的情况相同，但发送方在发送每个</span><span lang=EN-US>5000</span><span
+style='font-family:宋体'>位饮数据分组后必须等待一个</span><span lang=EN-US>50</span><span
+style='font-family:宋体'>字节的确认分组。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>（</span><span lang=EN-US>c</span><span style='font-family:宋体'>）夜间（</span><span
+lang=EN-US>12</span><span style='font-family:宋体'>小时）船运</span><span lang=EN-US>100</span><span
+style='font-family:宋体'>张</span><span lang=EN-US>CD</span><span
+style='font-family:宋体'>盘（铸个盘</span><span lang=EN-US>650MB</span><span
+style='font-family:宋体'>）。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>(a)</span><span
+style='font-family:宋体'>有效带宽是</span><span lang=EN-US>10Mbps</span><span
+style='font-family:宋体'>。发送方可以用这个速率稳定地发送数据，交换机只是沿着</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>流水线对数据进行流传送。在这肚我们假定不发送</span><span lang=EN-US>ACKs</span><span
+style='font-family:宋体'>，交换机能够保持和缓冲至少</span><span lang=EN-US>1</span><span
+style='font-family:宋体'>个</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>分组。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(b)</span><span
+style='font-family:宋体'>在发送方向上的延迟累计为</span><span lang=EN-US>500</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>4+10</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>4=2040<sub><img width=16
+height=17 src=""A0400005_001.files/image015.gif""></sub>s=2.04ms</span><span
+style='font-family:宋体'>。在每条链路上的</span><span lang=EN-US>ACK</span><span
+style='font-family:宋体'>延迟包含对于</span><span lang=EN-US>400</span><span
+style='font-family:宋体'>位的发送延迟</span><span lang=EN-US>40<sub><img width=16
+height=17 src=""A0400005_001.files/image015.gif""></sub>s</span><span
+style='font-family:宋体'>和传播延迟</span><span lang=EN-US>10<sub><img width=16
+height=17 src=""A0400005_001.files/image015.gif""></sub>s</span><span
+style='font-family:宋体'>，所以在</span><span lang=EN-US>ACK</span><span
+style='font-family:宋体'>方向上的延迟累计为</span><span lang=EN-US>40</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>4+10</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>4=200<sub><img width=16
+height=17 src=""A0400005_001.files/image015.gif""></sub>s=0.2ms</span><span
+style='font-family:宋体'>。总的</span><span lang=EN-US>RTT</span><span
+style='font-family:宋体'>等于</span><span lang=EN-US>2.04+0.2=2.24ms</span><span
+style='font-family:宋体'>。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>因此，有效带宽等于</span><span lang=EN-US>5000</span><span style='font-family:宋体'>位÷</span><span
+lang=EN-US>2.24</span><span style='font-family:宋体'>毫秒</span><span lang=EN-US>=2.24ms</span><span
+style='font-family:宋体'>。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(c)100</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>6.5</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>10<sup>8</sup></span><span
+style='font-family:宋体'>字节／</span><span lang=EN-US>12</span><span
+style='font-family:宋体'>小时</span><span lang=EN-US>=6.5</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>10<sup>10</sup></span><span
+style='font-family:宋体'>字节／（</span><span lang=EN-US>12</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>3600</span><span
+style='font-family:宋体'>秒）</span><span lang=EN-US>=</span><span
+ lang=EN-US>1.5M</span><span style='font-family:宋体'>字节／秒＝</span><span
+ lang=EN-US>12M</span><span style='font-family:宋体'>位／秒。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>29
+</h1></span><span
+style='font-family:宋体'>在下列情况下，假定没有数据压缩，对于</span><span lang=EN-US>(a)~(c)</span><span
+style='font-family:宋体'>试计算实时传送所需要的带宽。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>（</span><span lang=EN-US>a</span><span style='font-family:宋体'>）分辨率为</span><span
+lang=EN-US>640</span><span style='font-family:宋体'>×</span><span lang=EN-US>480</span><span
+style='font-family:宋体'>的视频，每个像素</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>个字节，每秒</span><span lang=EN-US>30</span><span
+style='font-family:宋体'>帧。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>（</span><span lang=EN-US>b</span><span style='font-family:宋体'>）</span><span
+lang=EN-US>160</span><span style='font-family:宋体'>×</span><span lang=EN-US>120</span><span
+style='font-family:宋体'>视频，每个像素</span><span lang=EN-US>1</span><span
+style='font-family:宋体'>字节，每秒</span><span lang=EN-US>5</span><span
+style='font-family:宋体'>帧。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>（</span><span lang=EN-US>c</span><span style='font-family:宋体'>）</span><span
+lang=EN-US>CD-ROM</span><span style='font-family:宋体'>音乐，</span><span
+lang=EN-US>1</span><span style='font-family:宋体'>张</span><span lang=EN-US>CD</span><span
+style='font-family:宋体'>可以播放</span><span lang=EN-US>75</span><span
+style='font-family:宋体'>分钟，容量为</span><span lang=EN-US>650MB</span><span
+style='font-family:宋体'>。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(d) </span><span
+style='font-family:宋体'>假定传真发送一幅</span><span lang=EN-US>8</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>10</span><span
+style='font-family:宋体'>英尺的黑白图像，分辨率为母英寸</span><span lang=EN-US>72</span><span
+style='font-family:宋体'>个像素。在</span><span lang=EN-US>14.4Kbps</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>的</span><span lang=EN-US>Modem</span><span style='font-family:宋体'>上要花多长时间？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>(a)640</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>480</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>3 </span><span
+style='font-family:宋体'>×</span><span lang=EN-US>30=</span><span
+ lang=EN-US>26.4M</span><span style='font-family:宋体'>字节</span><span lang=EN-US>/</span><span
+style='font-family:宋体'>秒（</span><span
+ lang=EN-US>1M</span><span lang=EN-US>=1024<sup>2</sup></span><span
+style='font-family:宋体'>）</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(b)160</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>120</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>1</span><span style='font-family:
+宋体'>×</span><span lang=EN-US>5=96000</span><span style='font-family:宋体'>字节</span><span
+lang=EN-US>/</span><span style='font-family:宋体'>秒</span><span lang=EN-US>=94kB/s&nbsp;
+(1 KB= 1024</span><span style='font-family:宋体'>字节）</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(c)650MB/75</span><span
+style='font-family:宋体'>分</span><span lang=EN-US>=8.7MB/</span><span
+style='font-family:宋体'>分</span><span lang=EN-US>=148KB/</span><span
+style='font-family:宋体'>秒</span><span lang=EN-US> (1 K=1024)</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(d)8</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>10</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>72</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>72=414720</span><span
+style='font-family:宋体'>位</span><span lang=EN-US>=51840</span><span
+style='font-family:宋体'>字节</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>414720</span><span
+style='font-family:宋体'>位÷</span><span lang=EN-US>14400</span><span
+style='font-family:宋体'>位／秒</span><span lang=EN-US>=28.8</span><span
+style='font-family:宋体'>秒</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>30
+</h1></span><span
+style='font-family:宋体'>假定一个共享介质</span><span lang=EN-US>M</span><span
+style='font-family:宋体'>以轮转的方式提供机会给主机</span><span lang=EN-US>A<sub>1</sub></span><span
+style='font-family:宋体'>，</span><span lang=EN-US> A<sub>2</sub>, </span><span
+style='font-family:宋体'>…</span><span lang=EN-US>, A<sub>N</sub></span><span
+style='font-family:宋体'>发送一个分组，</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>没有数据要发送的主机立即放弃</span><span lang=EN-US>M</span><span style='font-family:
+宋体'>。这跟同步时分多路复用（</span><span lang=EN-US> STDM</span><span style='font-family:
+宋体'>）有什么不同？跟</span><span lang=EN-US>STDM</span><span style='font-family:宋体'>相比，采用这个方案的网络利用率如何？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>在</span><span lang=EN-US>STDM</span><span
+style='font-family:宋体'>中，所提供的时间片总是相同长度，如果不被所分配给的站使用，就</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>会造成浪费。本题中的轮转访问机制给每个站发送一个分组的机会，在一定的最大分组长</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>度限制范围内，分组可长可短，因此各个站的发送时间少并不相同，可以根据需要改变，没</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>有数据要发送的站可以不占用发送时间。正因为如此，该访问机制的网络利用率可能高得</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>多。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>31
+</h1></span><span
+style='font-family:宋体'>考虑在一条链路上传送文件的一个简单协议。在经过某种初始商之后</span><span lang=EN-US>,A</span><span
+style='font-family:宋体'>给</span><span lang=EN-US>B</span><span style='font-family:
+宋体'>发送</span><span lang=EN-US>1KB</span><span style='font-family:宋体'>大小的数据分组，</span><span
+lang=EN-US>B</span><span style='font-family:宋体'>然后用一个确认应答。</span><span
+lang=EN-US>A</span><span style='font-family:宋体'>在发送下一个数据分组之前总是要等待前一个</span><span
+lang=EN-US>ACK</span><span style='font-family:宋体'>（确认），这就是通常所说的停</span><span
+lang=EN-US>-</span><span style='font-family:宋体'>等协议。在一个预定的时间内未收到确认的分组，就认为是丢失了，并且进行重发。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(a)</span><span
+style='font-family:宋体'>在不会有分组丢失或重复的情况下，说明为什么在分组头中包含“序列号”是不必要的？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(b)</span><span
+style='font-family:宋体'>假定链路可能偶尔地丢失分组，但分组总是以发送的顺序到达接收方。为了让</span><span
+lang=EN-US>A</span><span style='font-family:宋体'>和</span><span lang=EN-US>B</span><span
+style='font-family:宋体'>能够检测到和重发丢失的分组，使用</span><span lang=EN-US>2</span><span
+style='font-family:宋体'>位做序列号够用吗？</span><span lang=EN-US>1</span><span
+style='font-family:宋体'>位怎么样？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(c)</span><span
+style='font-family:宋体'>现在假定链路可能投递无序，有时候</span><span lang=EN-US>1</span><span
+style='font-family:宋体'>个分组投递可能花</span><span lang=EN-US>1</span><span
+style='font-family:宋体'>分钟时间，在若干后随分组之后到达。这会怎样改变对序列号的需求？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>(a)</span><span
+style='font-family:宋体'>在不会有分组丢失或接收重复分组的情况下，当我们期待接收第</span><span lang=EN-US>N</span><span
+style='font-family:宋体'>个分组时，就一定接收到第</span><span lang=EN-US>N</span><span
+style='font-family:宋体'>个分组，因此我们可以在接收方本地保持跟踪分组的顺序号</span><span lang=EN-US>N</span><span
+style='font-family:宋体'>。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(b)</span><span
+style='font-family:宋体'>为了能够区分所收到的是一个新的分组还是前一个分组的重复拷贝，需要至少</span><span
+lang=EN-US>1</span><span style='font-family:宋体'>位序列号。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(c)</span><span
+style='font-family:宋体'>对于允许的失序投递，长至</span><span lang=EN-US>1</span><span
+style='font-family:宋体'>分钟时间的多个分组必须通过顺序号区别开来。否则，一个很老的分组可能到达时被作为当前分组接收。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>序列号的个数必须多至：带宽×</span><span lang=EN-US>1</span><span style='font-family:
+宋体'>分钟／分组大小。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>32
+</h1></span><span
+style='font-family:宋体'>影响一个“存储</span><span lang=EN-US>-</span><span
+style='font-family:宋体'>转发”式分组交换系统延迟的一个因素是通过交换机存储转发一个分组要花多长时间。假定在铜线和光纤中的传播速度是光在真空中速度的</span><span
+lang=EN-US>2/3,</span><span style='font-family:宋体'>并假定客户机在纽约，服务器在加利福尼亚。如果交换时间是</span><span
+lang=EN-US>10</span><span style='font-family:宋体'>微秒，那么它可能是影响这个“客户</span><span
+lang=EN-US>-</span><span style='font-family:宋体'>服务器”系统响应时间的主要因素吗？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>不是。传播速度是</span><span lang=EN-US>200000</span><span
+style='font-family:宋体'>公里／秒或</span><span
+ lang=EN-US>200</span><span style='font-family:宋体'>米</span><span
+style='font-family:宋体'>／微秒。在</span><span lang=EN-US>10</span><span
+style='font-family:宋体'>微秒的时间内，信号传播</span><span lang=EN-US>2</span><span
+style='font-family:宋体'>公里。因此每个交换机加进相当于</span><span lang=EN-US>2</span><span
+style='font-family:宋体'>公里额外线缆的延迟。如果客户机和服务器相隔</span><span lang=EN-US>5000</span><span
+style='font-family:宋体'>公里，即使跨越</span><span lang=EN-US>50</span><span
+style='font-family:宋体'>个交换机，也仅相当于在总的通路上加进</span><span lang=EN-US>100</span><span
+style='font-family:宋体'>公里的额外线缆，只是</span><span lang=EN-US>5000</span><span
+style='font-family:宋体'>公里的</span><span lang=EN-US>2%</span><span
+style='font-family:宋体'>。因此，在这种情况下交换延迟不是影响响应时间的主要因素。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>33
+</h1></span><span
+style='font-family:宋体'>在未来，当每个人都有一个家庭终端连到计算机网络时，对重要的未决立法，公众即时表决将成为可能。最终，现有的立法机构可能消亡，让民众的意愿汽接地表达出来。这种直接民主的正面方面是很显然的，试讨论它的一些负面方面。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>这里很显然没有单个正确的答案，但下列儿点看来是相关的。现在的系统在其机制中有大量的惯性（检查和平衡），这种惯性在每次不同派别轮换执政时可能有助于现有立法的、经济的和社会的系统不被推翻。而且，有许多人对争论的社会问题持有强烈的观点，但他们并不真正了解事实真相。允许理由不充分的观点写进法律是不合适的。这种或那种特别利益组织大做广告的潜在影响也必须予以考虑。另一个重要影响是安个性，许多人可能担心一些青少年攻击系统，并篡改结果。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>34
+</h1></span><span
+style='font-family:宋体'>一幅图像有</span><span lang=EN-US>1024</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>768</span><span
+style='font-family:宋体'>个像素，每个像素</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>个字节。假定该图像不压缩。试问：在一个</span><span lang=EN-US>56Kbps</span><span
+style='font-family:宋体'>的</span><span lang=EN-US>Modem</span><span
+style='font-family:宋体'>上要花多长时间？在</span><span lang=EN-US>1Mbps</span><span
+style='font-family:宋体'>的电缆</span><span lang=EN-US>Modem</span><span
+style='font-family:宋体'>上要花多长时间？在</span><span lang=EN-US>10Mbp</span><span
+style='font-family:宋体'>的以太网上要花多长时间？在</span><span lang=EN-US>100Mbps</span><span
+style='font-family:宋体'>的以太网上呢？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>该图像的数据量是</span><span lang=EN-US>1024</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>768</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>3</span><span style='font-family:
+宋体'>即</span><span lang=EN-US>2359296</span><span style='font-family:宋体'>字节，等于</span><span
+lang=EN-US>18874368</span><span style='font-family:宋体'>位。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>在</span><span lang=EN-US>56000</span><span style='font-family:宋体'>位／秒速率下，要花</span><span
+lang=EN-US>337.042</span><span style='font-family:宋体'>秒；</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>在</span><span
+ lang=EN-US>1M</span><span style='font-family:宋体'>位／秒速率下，要花</span><span
+lang=EN-US>18.874</span><span style='font-family:宋体'>秒；</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>在</span><span
+ lang=EN-US>10M</span><span style='font-family:宋体'>位／秒速率下，要花</span><span
+lang=EN-US>1.887</span><span style='font-family:宋体'>秒；</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>在</span><span
+ lang=EN-US>100M</span><span style='font-family:宋体'>位／秒速率下，要花</span><span
+lang=EN-US>0.189</span><span style='font-family:宋体'>秒。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>35
+</h1></span><span
+style='font-family:宋体'>假定有一个人训练他的小狗为他运送一个包含</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>盘</span><span lang=EN-US>8</span><span style='font-family:
+宋体'>毫米磁带的盒子。每一盘磁带的容量都是</span><span lang=EN-US>7</span><span style='font-family:
+宋体'>千兆字节，小狗以每小时</span><span lang=EN-US>18</span><span style='font-family:宋体'>公里的速度向你跑来。问在什么样的距离范围内，小狗的数据传输速率要高于</span><span
+lang=EN-US>150Mbps</span><span style='font-family:宋体'>的传输线路的传输速率？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>狗可以运载</span><span lang=EN-US>21</span><span
+style='font-family:宋体'>千兆字节，即</span><span lang=EN-US>168</span><span
+style='font-family:宋体'>千兆位。每小时</span><span lang=EN-US>18</span><span
+style='font-family:宋体'>公里的速度等于每秒</span><span lang=EN-US>0.005</span><span
+style='font-family:宋体'>公里，跑</span><span lang=EN-US>x</span><span
+style='font-family:宋体'>公里花费的时间是</span><span lang=EN-US>x/0.005=200x</span><span
+style='font-family:宋体'>秒，所产生的运载数据的速率等于</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>[168/(20x)]Gbps</span><span
+style='font-family:宋体'>，即</span><span lang=EN-US>840/x Mbps</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>令</span><span lang=EN-US>840/x&gt;150,</span><span style='font-family:宋体'>得到</span><span
+lang=EN-US>x&lt;</span><span
+ lang=EN-US>5.6</span><span style='font-family:宋体'>公里</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>因此，在小于</span><span lang=EN-US>5:</span><span
+ lang=EN-US>6</span><span style='font-family:宋体'>公里</span><span
+style='font-family:宋体'>的距离范围内，小狗的数据传输速率比</span><span lang=EN-US>150Mbps</span><span
+style='font-family:宋体'>的传输线路高。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>36
+</h1></span><span
+style='font-family:宋体'>特种漆公司的总裁有了一个想法，要跟本地的一个啤酒酿造商一起生产一种不显眼的啤酒罐头盒（作为一种防止乱丢垃圾影响市容的措施）。总裁让他的法律部门研究这件事</span><span
+lang=EN-US>,</span><span style='font-family:宋体'>法律部门又请工程部门帮助。结果，总工程师打电话给对方公司的相应人员讨论项目的技术方面。然后双方的工程师向各自的法律部门报告，后者又通过电话协商安排法律方面的事项。最后，两个公司的总裁讨论该交易的财务方面的问题。在</span><span
+lang=EN-US>OSI</span><span style='font-family:宋体'>模型的意义上，这是一个多层协议的例子吗？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>不是。在</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>的协议模型中，物理通信仅发生在最底层，而不是在每一层都发生。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>37
+</h1></span><span
+style='font-family:宋体'>下图示出了一种服务。在该图中是否隐含着其他服务？如果是，在哪里？如果否，为什么？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:57.75pt'><span
+lang=EN-US><img width=378 height=234 src=""A0400005_001.files/image016.jpg""></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>题图中所示的服务是</span><span lang=EN-US>k</span><span
+style='font-family:宋体'>层向</span><span lang=EN-US>k+l</span><span
+style='font-family:宋体'>层提供的服务。另一个一定存在的服务在</span><span lang=EN-US>k</span><span
+style='font-family:宋体'>层下面，</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>该服务由下面的</span><span lang=EN-US>k-1</span><span style='font-family:宋体'>层向</span><span
+lang=EN-US>k</span><span style='font-family:宋体'>层提供。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>38
+</h1></span><span
+style='font-family:宋体'>如果在数据链路级交换的单元叫做帧，在网络级交换的单元叫做分组，那么是帧封装分组，还是分组封装帧？请解释你的答案。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>是帧封装分组。当一个分组到达数据链路层时，整个分组，包括头和数据，都被用作一个帧的数据域。这就好像把整个分组放在一个信封内，因此我们说是帧封装分组。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>39
+</h1></span><span
+style='font-family:宋体'>当系统中既有固定部分也有可移动部分时，例如软盘驱动器和软盘，对该系统进行标准化是很重要的。这样不同的公司就都叫以制造固定部分和可移动部分，并且它们可以组合在一起工作。举出在计算机工业之外存在这种国际标准的</span><span
+lang=EN-US>3</span><span style='font-family:宋体'>个例子。再给出在计算机</span> <span
+style='font-family:宋体'>工业之外不存在这种国际标准的</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>个领域。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>具有国际标准的系统的例子包括</span><span lang=EN-US>CD</span><span
+style='font-family:宋体'>播放器和它们的盘，随身听和录音磁带，照相机和</span><span lang=EN-US>35</span><span
+style='font-family:宋体'>毫米胶卷，自动出纳机和银行卡片。缺乏国际标准的领域包括盒式录像机和录像带</span><span
+lang=EN-US>(</span><span style='font-family:宋体'>在美国是</span><span lang=EN-US>NTSC
+VHS,</span><span style='font-family:宋体'>在欧洲是</span><span lang=EN-US>PAL,</span><span
+style='font-family:宋体'>在其他国家还有</span><span lang=EN-US>SECAM VHS )</span><span
+style='font-family:宋体'>，手提电话，电灯和灯泡（不同的国家使用不同的电压），影印机和纸</span><span lang=EN-US>(</span><span
+style='font-family:宋体'>在美国是</span><span lang=EN-US>8.5</span><span
+style='font-family:宋体'>×</span><span lang=EN-US>11</span><span
+style='font-family:宋体'>英寸，其他地方是</span><span lang=EN-US>A4)</span><span
+style='font-family:宋体'>，螺钉和螺母（英制和公制螺距）。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>40
+</h1></span><span
+style='font-family:宋体'>举出网络协议建立国际标准的两个优点和两个缺点。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>一个优点是如果母个人都使用标准，那么每一个人都可以跟其他任何人交流。另一个优点是广泛使用标准将导致规模经济，比如生产大规模集成电路芯片。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>一个缺点是为了取得标准化所箭要的政治妥协经常导致差的标准。另一个缺点是一旦标准被广泛采用了，要对它进行改变就会非常困难，即使发现了新的和更好的技术或方法，也难以替换。另外，标准化的过程需要一段时间，当标准被接受的时候，它可能已经是过时的了。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>41
+</h1></span><span
+style='font-family:宋体'>在</span><span lang=EN-US>FM</span><span
+style='font-family:宋体'>（调频）电台广播中，</span><span lang=EN-US>SAP</span><span
+style='font-family:宋体'>（服务访问点）地址是什么？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>SAP</span><span
+style='font-family:宋体'>（服务访问点）地址是所使用的频率，例如</span><span lang=EN-US>87.6</span><span
+style='font-family:宋体'>、</span><span lang=EN-US>103.9</span><span
+style='font-family:宋体'>等。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>42
+</h1></span><span
+style='font-family:宋体'>无连接通信和面向连接的通信之间主要区别是什么？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>面向连接的通信有三个阶段。在连接建立阶段，先要做一个请求，然后才能建立连接。只有在这个阶段被成功地完成后，才可以开始数据传送阶段。然后是连接释放阶段。无连接通信没有这此阶段，它只是发送数据。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>43
+</h1></span><span
+style='font-family:宋体'>有两个网络，它们都提供可靠的面向连接的服务。一个提供可靠的字节流，另一个提供可靠的报文流。请问二者是否相同？为什么？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>不相同。在报文流中，网络保持对报文边界的跟踪；而在字节流中，网络不做这样的跟踪。例如，一个进程向一条连接写了</span><span
+lang=EN-US>1024</span><span style='font-family:宋体'>字节，稍后又写了另外</span><span
+lang=EN-US>1024</span><span style='font-family:宋体'>字节。那么接收方共读了</span><span
+lang=EN-US>2048</span><span style='font-family:宋体'>字节。对于报文流，接收方将得到两个报文，每个报文</span><span
+lang=EN-US>1024</span><span style='font-family:宋体'>字节。而对于字节流，报文边界不被识别。接收方把全部</span><span
+lang=EN-US>2048</span><span style='font-family:宋体'>字节当作一个整体，在此已经体现不出原先有两个不同报文的事实。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>44
+</h1></span><span
+style='font-family:宋体'>在两台计算之间传输一个文件，有两种可行的确认策略。第一种策略把文件截成分组，接收方逐个地确认分组，但就整体而言，文件的传送没有得到确认。第二种策略不确认单个分组，但当文件全部收到后，对整个文件予以接收确认。请讨论这两种方式的优缺点。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>如果网络容易丢失分组，那么对每个分组逐一进行确认较好，此时仅重传丢失的分组。而在另一方面，如果网络高度可靠，那么在不发生差错的情况下，仅在整个文件传送的结尾发送一次确认，从而减少了确认的次数，节省了带宽；不过，即使有单个分组丢失，也而要重传整个文件。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>45
+</h1></span><span
+style='font-family:宋体'>当讨论网络协议时，“协商”的含义是什么？请举出一个例子。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>协商是要让双方就通信期间将使用的某些参数或值达成一致。最大分组长度就是一个例子。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>46
+</h1></span><span
+style='font-family:宋体'>在</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>模型中，是</span><span lang=EN-US>TPDU</span><span
+style='font-family:宋体'>（运输层协议数据单元）封装网络层分组，还是网络层分组封装</span><span lang=EN-US>TPDU
+?</span><span style='font-family:宋体'>请讨论。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>网络层分组封装</span><span lang=EN-US>TPDU</span><span
+style='font-family:宋体'>。当</span><span lang=EN-US>TPDU</span><span
+style='font-family:宋体'>向下到达网络层的时候，整个</span><span lang=EN-US>TPDU,</span><span
+style='font-family:宋体'>包括其头和数据，都被用作网络层分组的数据段。也就是说，整个</span><span lang=EN-US>TPDU</span><span
+style='font-family:宋体'>都被放到一个信封中。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>47
+</h1></span><span
+style='font-family:宋体'>列举</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>参考模型和</span><span lang=EN-US>TCP/IP</span><span
+style='font-family:宋体'>参考模型相同的两个方而。再列举它们不同的两个方面。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>相同的两个方而：</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><sub><img
+width=12 height=13 src=""A0400005_001.files/image017.gif""></sub>&nbsp;</span><span
+style='font-family:宋体'>两个模型都是基于分层协议。两者都有网络层、运输层和应用层。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><sub><img
+width=12 height=13 src=""A0400005_001.files/image017.gif""></sub>&nbsp;</span><span
+style='font-family:宋体'>在两个模型中，运输服务都可以提供可靠的端到端的字节流。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>但它们在多个方面是不同的。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><sub><img
+width=12 height=13 src=""A0400005_001.files/image017.gif""></sub>&nbsp;TCP/IP</span><span
+style='font-family:宋体'>没有会话层，也没有表示层。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><sub><img
+width=12 height=13 src=""A0400005_001.files/image017.gif""></sub>&nbsp;OSI</span><span
+style='font-family:宋体'>不支持网络互连；</span><span lang=EN-US>OSI</span><span
+style='font-family:宋体'>在网络层既有无连接服务，也有面向连接的服务。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>48
+</h1></span><span
+style='font-family:宋体'>下图示出的网络设计在于要经受得住核战争。假定任意一颗炸弹消灭一个节点以及所有跟它连接的链路，那么需要多少颗炸弹才能把所有的节点划分成互相隔离的两个部分？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:10.5pt'><span
+lang=EN-US><img width=189 height=257 src=""A0400005_001.files/image018.jpg""></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>使用</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>颗炸弹可以把右上角的两个节点跟其余节点隔离开来。</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>颗炸弹除掉了这两个节点所连接的</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>个节点。事实上</span><span lang=EN-US>,</span><span
+style='font-family:宋体'>该系统可以承受任意两个节点的丢失。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>49
+</h1></span><span
+style='font-family:宋体'>因特网的规模大约每</span><span lang=EN-US>18</span><span
+style='font-family:宋体'>个月翻一番，虽然无人能肯定，但有人估计在</span><span lang=EN-US>2001</span><span
+style='font-family:宋体'>年因特网上的主机数已达到</span><span lang=EN-US>1</span><span
+style='font-family:宋体'>亿台。请根据这此数据计算到</span><span lang=EN-US>2010</span><span
+style='font-family:宋体'>年时因特网上预估的主机数。你相信这个数字吗？请解释你的回答。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>每</span><span lang=EN-US>18</span><span
+style='font-family:宋体'>个月翻一番，意味着</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>年增加到</span><span lang=EN-US>4</span><span
+style='font-family:宋体'>倍，那么</span><span lang=EN-US>9</span><span
+style='font-family:宋体'>年将增加到</span><span lang=EN-US>4<sup>3</sup></span><span
+style='font-family:宋体'>即</span><span lang=EN-US>64</span><span
+style='font-family:宋体'>倍，导致</span><span lang=EN-US>64</span><span
+style='font-family:宋体'>亿台主机。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>也许这种计算过于保守，因为到了</span><span lang=EN-US>2010</span><span style='font-family:
+宋体'>年</span><span lang=EN-US>,</span><span style='font-family:宋体'>也许世界上的每一台电视机以及数十亿的其他电器都将在局域网上，并连接到因特网。那时候，在发达世界中的普通人都可能有数十台因特网主机。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>50
+</h1>TCP</span><span
+style='font-family:宋体'>和</span><span lang=EN-US>UDP</span><span
+style='font-family:宋体'>之间的主要区别是什么？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>TCP</span><span
+style='font-family:宋体'>是面向连接的，而</span><span lang=EN-US>UDP</span><span
+style='font-family:宋体'>足一种数据报服务。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>51
+</h1></span><span
+style='font-family:宋体'>有</span><span lang=EN-US>5</span><span style='font-family:
+宋体'>个路由器要连成一个点到点结构的子网。在每一对路由器之间可以设置一条高速线路，或者一条中速线路，或者一条低速线路，也可以不设置任何线路。如果产生和考察每一种拓扑要花</span><span
+lang=EN-US>100</span><span style='font-family:宋体'>毫秒的计算机时间，那么为了寻找匹配预期负载的拓扑而考察所有可能的拓扑需用多长时间？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>设这</span><span lang=EN-US>5</span><span
+style='font-family:宋体'>个路由器分别叫做</span><span lang=EN-US>A</span><span
+style='font-family:宋体'>、</span><span lang=EN-US>B</span><span style='font-family:
+宋体'>、</span><span lang=EN-US>C</span><span style='font-family:宋体'>、</span><span
+lang=EN-US>D</span><span style='font-family:宋体'>和</span><span lang=EN-US>E</span><span
+style='font-family:宋体'>。存在</span><span lang=EN-US>10</span><span
+style='font-family:宋体'>条可能的线路：</span><span lang=EN-US>AB</span><span
+style='font-family:宋体'>、</span><span lang=EN-US>AC</span><span
+style='font-family:宋体'>、</span><span lang=EN-US>AD</span><span
+style='font-family:宋体'>、</span><span lang=EN-US> AE</span><span
+style='font-family:宋体'>、</span><span lang=EN-US> BC</span><span
+style='font-family:宋体'>、</span><span lang=EN-US> BD</span><span
+style='font-family:宋体'>、</span><span lang=EN-US> BE</span><span
+style='font-family:宋体'>、</span><span lang=EN-US> CD</span><span
+style='font-family:宋体'>、</span><span lang=EN-US> CE</span><span
+style='font-family:宋体'>和</span><span lang=EN-US>DE</span><span
+style='font-family:宋体'>。它们中的每一条都有</span><span lang=EN-US>4</span><span
+style='font-family:宋体'>种可能性：</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>种速率以及没有线路；因此总的拓扑数等于</span><span lang=EN-US>4<sup>10</sup>=1048576</span><span
+style='font-family:宋体'>。因为每种拓扑花</span><span lang=EN-US>100</span><span
+style='font-family:宋体'>毫秒的时间，所以总共需用的时间等于</span><span lang=EN-US>104857.6</span><span
+style='font-family:宋体'>秒，约为</span><span lang=EN-US>29</span><span
+style='font-family:宋体'>小时。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>52
+</h1></span><span
+style='font-family:宋体'>参照下图回答问题。图中的每个方框表示一个网络节点。以星号标注的圆圈表示你的终端。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><img
+width=322 height=227 src=""A0400005_001.files/image019.jpg""></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US>(a)</span><span style='font-family:宋体'>你的本地节点是哪一个节点？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:10.5pt'><span
+lang=EN-US>(b)</span><span style='font-family:宋体'>哪些节点是你的木地节点的相邻节点？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US>(c)</span><span style='font-family:宋体'>对你的本地节点来说，哪些节点是远程节点？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:10.5pt'><span
+lang=EN-US>(d)</span><span style='font-family:宋体'>哪些节点是终端节点</span><span
+lang=EN-US>(END&nbsp; NODES</span><span style='font-family:宋体'>）？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:10.5pt'><span
+lang=EN-US>(e) </span><span style='font-family:宋体'>哪些节点是路由节点</span><span
+lang=EN-US>(ROUTING NODES</span><span style='font-family:宋体'>）？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt'><span
+lang=EN-US>(f)</span><span style='font-family:宋体'>从节点</span><span lang=EN-US>F</span><span
+style='font-family:宋体'>到</span><span lang=EN-US>G</span><span style='font-family:
+宋体'>的最短通路有多少个跳段</span><span lang=EN-US>(HOPS)</span><span style='font-family:
+宋体'>？</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:10.5pt'><span
+lang=EN-US><a style='color:red'>(a)C</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:15.75pt'><span
+lang=EN-US>(b)A</span><span style='font-family:宋体'>和</span><span lang=EN-US>G</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(c)A</span><span
+style='font-family:宋体'>、</span><span lang=EN-US>B</span><span style='font-family:
+宋体'>、</span><span lang=EN-US>D</span><span style='font-family:宋体'>、</span><span
+lang=EN-US>E</span><span style='font-family:宋体'>、</span><span lang=EN-US>F</span><span
+style='font-family:宋体'>、</span><span lang=EN-US>G</span><span style='font-family:
+宋体'>和</span><span lang=EN-US>H</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(d)D</span><span
+style='font-family:宋体'>、</span><span lang=EN-US>F</span><span style='font-family:
+宋体'>、</span><span lang=EN-US>G</span><span style='font-family:宋体'>和</span><span
+lang=EN-US>H</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(e)A</span><span
+style='font-family:宋体'>、</span><span lang=EN-US>B</span><span style='font-family:
+宋体'>、</span><span lang=EN-US>C</span><span style='font-family:宋体'>和</span><span
+lang=EN-US>E</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>(f)5</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>53
+</h1></span><span
+style='font-family:宋体'>在</span><span lang=EN-US>ISO/OSI</span><span
+style='font-family:宋体'>参考模型中，同层对等实体间进行信息交换时必须遵守的规则称为</span><span lang=EN-US>(A)</span><span
+style='font-family:宋体'>，</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>相邻层间进行信息交换时必须遵守的规则称为</span><span lang=EN-US>(B)</span><span
+style='font-family:宋体'>，相邻层间进行信息交换时使用的一组操作原语称为（</span><span lang=EN-US>C</span><span
+style='font-family:宋体'>）。（</span><span lang=EN-US>D</span><span
+style='font-family:宋体'>）层的主要功能是提供端到端的信息传送，它利用</span><span lang=EN-US>(E)</span><span
+style='font-family:宋体'>层提供的服务完成此功能。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>下面给出了可供选择的答案：</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>A</span><span
+style='font-family:宋体'>、</span><span lang=EN-US> B</span><span
+style='font-family:宋体'>、</span><span lang=EN-US> C</span><span
+style='font-family:宋体'>：</span><span lang=EN-US> 1</span><span
+style='font-family:宋体'>．接口：</span><span lang=EN-US>2.</span><span
+style='font-family:宋体'>协议；</span><span lang=EN-US>3.</span><span
+style='font-family:宋体'>服务；</span><span lang=EN-US>4.</span><span
+style='font-family:宋体'>关系；</span><span lang=EN-US>5.</span><span
+style='font-family:宋体'>调用；</span><span lang=EN-US>6.</span><span
+style='font-family:宋体'>连接。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>D</span><span
+style='font-family:宋体'>、</span><span lang=EN-US>E: l</span><span
+style='font-family:宋体'>．表示；</span><span lang=EN-US>2.</span><span
+style='font-family:宋体'>数据链路；</span><span lang=EN-US>3.</span><span
+style='font-family:宋体'>网络；</span><span lang=EN-US>4.</span><span
+style='font-family:宋体'>会话；</span><span lang=EN-US>5.</span><span
+style='font-family:宋体'>运输；</span><span lang=EN-US>6.</span><span
+style='font-family:宋体'>应用。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>答题填空：</span><span lang=EN-US>A(&nbsp;&nbsp;&nbsp; )</span><span
+style='font-family:宋体'>；</span><span lang=EN-US>B(&nbsp;&nbsp;&nbsp; )</span><span
+style='font-family:宋体'>；</span><span lang=EN-US>C(&nbsp;&nbsp;&nbsp; )</span><span
+style='font-family:宋体'>；</span><span lang=EN-US>D(&nbsp;&nbsp;&nbsp; )</span><span
+style='font-family:宋体'>；</span><span lang=EN-US>E(&nbsp;&nbsp;&nbsp; )</span><span
+style='font-family:宋体'>。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>A(2.</span><span
+style='font-family:宋体'>协议）；</span><span lang=EN-US>B(1</span><span
+style='font-family:宋体'>．接口）；</span><span lang=EN-US>C(3.</span><span
+style='font-family:宋体'>服务）；</span><span lang=EN-US>D(5.</span><span
+style='font-family:宋体'>运输）；</span><span lang=EN-US>E(3.</span><span
+style='font-family:宋体'>网络）。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>54
+</h1></span><span
+style='font-family:宋体'>计算机网络中，分层和协议的集合称为计算机网络的</span><span lang=EN-US>(A)</span><span
+style='font-family:宋体'>。其中，实际应用最广泛的（</span><span lang=EN-US>A</span><span
+style='font-family:宋体'>）是（</span><span lang=EN-US>B</span><span
+style='font-family:宋体'>），由它组成了（</span><span lang=EN-US>C</span><span
+style='font-family:宋体'>）的一整套协议。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>可供选择的答案：</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>A</span><span
+style='font-family:宋体'>：</span><span lang=EN-US> 1</span><span
+style='font-family:宋体'>．组成结构；</span><span lang=EN-US>2.</span><span
+style='font-family:宋体'>参考模型；</span><span lang=EN-US>3.</span><span
+style='font-family:宋体'>体系结构；</span><span lang=EN-US>4.</span><span
+style='font-family:宋体'>基本功能。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>B</span><span
+style='font-family:宋体'>：</span><span lang=EN-US>1.SNA</span><span
+style='font-family:宋体'>；</span><span lang=EN-US>2.MAP/TOP</span><span
+style='font-family:宋体'>；</span><span lang=EN-US>3.TCP/IP</span><span
+style='font-family:宋体'>；</span><span lang=EN-US>4.X.25</span><span
+style='font-family:宋体'>；</span><span lang=EN-US>5.IS0/OSI</span><span
+style='font-family:宋体'>。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>C</span><span
+style='font-family:宋体'>：</span><span lang=EN-US>LISO/OSI</span><span
+style='font-family:宋体'>网；</span><span lang=EN-US>2.</span><span
+style='font-family:宋体'>局域网；</span><span lang=EN-US>3.Internet</span><span
+style='font-family:宋体'>；</span><span lang=EN-US>4.</span><span
+style='font-family:宋体'>分组交换网。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>答题填空：</span><span lang=EN-US>A(&nbsp;&nbsp;&nbsp; )</span><span
+style='font-family:宋体'>；</span><span lang=EN-US>B(&nbsp;&nbsp;&nbsp; )</span><span
+style='font-family:宋体'>；</span><span lang=EN-US>C(&nbsp;&nbsp;&nbsp; )</span><span
+style='font-family:宋体'>。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>A(3.</span><span
+style='font-family:宋体'>体系结构）；</span><span lang=EN-US>B(3.TCP/IP</span><span
+style='font-family:宋体'>）：</span><span lang=EN-US>C(3.Internet</span><span
+style='font-family:宋体'>）。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>55
+</h1></span><span
+style='font-family:宋体'>网络服务质量</span><span lang=EN-US>QoS</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'></span><span
+style='font-family:宋体'>服务质最（</span><span lang=EN-US>QoS</span><span
+style='font-family:宋体'>）是指为保证所提供服务的质量达到相应标准而采取的一系列措施的技术总称。网络对不同应用的分组有不同的处理方式。人们把可以提供这些不同级别服务的网络称作是支持</span><span
+lang=EN-US>QoS</span><span style='font-family:宋体'>（服务质量）的网络。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>56
+</h1>QoS</span><span
+style='font-family:宋体'>特性参数。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>QoS</span><span
+style='font-family:宋体'>特性参数重点有三个方面，一是带宽和用户可得到的速率，二是延迟，三是延迟</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>变化；当然，传统的误码率和可靠性指标，还有越来越显得重要的安全性也是不可忽视的。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US></a>"
+"<h1>57
+</h1></span><span
+style='font-family:宋体'>写出基本的运输服务原语组（运输连接建立、释放和数据传输各原语组）。试用状态转换图画出在一个运输连接上的这些运输服务原语有效时序关系。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><a style='color:red'>T__CONNECT.request
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T__CONNECT.indication,</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>T__CONNECT.response
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T
+__CONNECT</span><span style='font-family:宋体'>．</span><span lang=EN-US>confirm,</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>T__DISCONNECT.request
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T__DISCONNECT.indication,</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>T__DATA.request
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T__DATA.indication,</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>T__EXPEDITED__DATA.request
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T__EXPEDITED- DATA</span><span style='font-family:
+宋体'>．</span><span lang=EN-US>indication</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体'>下图画出了在一个运输连接上的这些运输服务原语的有效时序关系。</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US><img
+width=423 height=378 src=""A0400005_001.files/image020.jpg""></span></p>
+
+</div>
+
+</a>"
