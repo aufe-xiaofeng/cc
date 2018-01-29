@@ -1,0 +1,752 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PyMySQL 0.7.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="None" href="index.html#document-index"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="http://pymysql.readthedocs.io/en/latest/" />
+
+<link rel="stylesheet" href="https://media.readthedocs.org/css/readthedocs-doc-embed.css" type="text/css" />
+
+<script type="text/javascript" src="_static/readthedocs-data.js"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = 'index'
+</script>
+
+<script type="text/javascript" src="_static/readthedocs-dynamic-include.js"></script>
+
+<!-- end RTD <extrahead> -->
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html#document-index" class="icon icon-home"> PyMySQL
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-user/index">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#document-user/installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#document-user/examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#document-user/resources">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#document-user/development">Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-modules/index">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#document-modules/connections">Connection Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#document-modules/cursors">Cursor Objects</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html#document-index">PyMySQL</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html#document-index">Docs</a> &raquo;</li>
+        
+      <li>PyMySQL 0.7.2 documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/PyMySQL/PyMySQL/blob/master/docs/source/index.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-pymysql-s-documentation">
+<h1>Welcome to PyMySQL’s documentation!<a class="headerlink" href="#welcome-to-pymysql-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<span id="document-user/index"></span><div class="section" id="user-guide">
+<h2>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h2>
+<p>The PyMySQL user guide explains how to install PyMySQL and how to contribute to
+the library as a developer.</p>
+<div class="toctree-wrapper compound">
+<span id="document-user/installation"></span><div class="section" id="installation">
+<span id="id1"></span><h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<p>The last stable release is available on PyPI and can be installed with <code class="docutils literal"><span class="pre">pip</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install PyMySQL
+</pre></div>
+</div>
+<div class="section" id="requirements">
+<h4>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Python – one of the following:<ul>
+<li><a class="reference external" href="http://www.python.org/">CPython</a> &gt;= 2.6 or &gt;= 3.3</li>
+<li><a class="reference external" href="http://pypy.org/">PyPy</a> &gt;= 4.0</li>
+<li><a class="reference external" href="http://ironpython.net/">IronPython</a> 2.7</li>
+</ul>
+</li>
+<li>MySQL Server – one of the following:<ul>
+<li><a class="reference external" href="http://www.mysql.com/">MySQL</a> &gt;= 4.1  (tested with only 5.5~)</li>
+<li><a class="reference external" href="https://mariadb.org/">MariaDB</a> &gt;= 5.1</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<span id="document-user/examples"></span><div class="section" id="examples">
+<span id="id1"></span><h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="crud">
+<span id="id2"></span><h4>CRUD<a class="headerlink" href="#crud" title="Permalink to this headline">¶</a></h4>
+<p>The following examples make use of a simple table</p>
+<div class="code sql highlight-default"><div class="highlight"><pre><span></span>CREATE TABLE `users` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `email` varchar(255) COLLATE utf8_bin NOT NULL,
+    `password` varchar(255) COLLATE utf8_bin NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin
+AUTO_INCREMENT=1 ;
+</pre></div>
+</div>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pymysql.cursors</span>
+
+<span class="c1"># Connect to the database</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">pymysql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
+                             <span class="n">user</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">,</span>
+                             <span class="n">password</span><span class="o">=</span><span class="s1">&#39;passwd&#39;</span><span class="p">,</span>
+                             <span class="n">db</span><span class="o">=</span><span class="s1">&#39;db&#39;</span><span class="p">,</span>
+                             <span class="n">charset</span><span class="o">=</span><span class="s1">&#39;utf8mb4&#39;</span><span class="p">,</span>
+                             <span class="n">cursorclass</span><span class="o">=</span><span class="n">pymysql</span><span class="o">.</span><span class="n">cursors</span><span class="o">.</span><span class="n">DictCursor</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">with</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span> <span class="k">as</span> <span class="n">cursor</span><span class="p">:</span>
+        <span class="c1"># Create a new record</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;INSERT INTO `users` (`email`, `password`) VALUES (</span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">)&quot;</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;webmaster@python.org&#39;</span><span class="p">,</span> <span class="s1">&#39;very-secret&#39;</span><span class="p">))</span>
+
+    <span class="c1"># connection is not autocommit by default. So you must commit to save</span>
+    <span class="c1"># your changes.</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+    <span class="k">with</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span> <span class="k">as</span> <span class="n">cursor</span><span class="p">:</span>
+        <span class="c1"># Read a single record</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;SELECT `id`, `password` FROM `users` WHERE `email`=</span><span class="si">%s</span><span class="s2">&quot;</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;webmaster@python.org&#39;</span><span class="p">,))</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This example will print:</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;password&#39;</span><span class="p">:</span> <span class="s1">&#39;very-secret&#39;</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<span id="document-user/resources"></span><div class="section" id="resources">
+<span id="id1"></span><h3>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h3>
+<p>DB-API 2.0: <a class="reference external" href="http://www.python.org/dev/peps/pep-0249">http://www.python.org/dev/peps/pep-0249</a></p>
+<p>MySQL Reference Manuals: <a class="reference external" href="http://dev.mysql.com/doc/">http://dev.mysql.com/doc/</a></p>
+<p>MySQL client/server protocol:
+<a class="reference external" href="http://dev.mysql.com/doc/internals/en/client-server-protocol.html">http://dev.mysql.com/doc/internals/en/client-server-protocol.html</a></p>
+<p>PyMySQL mailing list: <a class="reference external" href="https://groups.google.com/forum/#!forum/pymysql-users">https://groups.google.com/forum/#!forum/pymysql-users</a></p>
+</div>
+<span id="document-user/development"></span><div class="section" id="development">
+<span id="id1"></span><h3>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h3>
+<p>You can help developing PyMySQL by <a class="reference external" href="https://github.com/PyMySQL/PyMySQL">contributing on GitHub</a>.</p>
+<div class="section" id="building-the-documentation">
+<h4>Building the documentation<a class="headerlink" href="#building-the-documentation" title="Permalink to this headline">¶</a></h4>
+<p>Go to the <code class="docutils literal"><span class="pre">docs</span></code> directory and run <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code>.</p>
+</div>
+<div class="section" id="test-suite">
+<h4>Test Suite<a class="headerlink" href="#test-suite" title="Permalink to this headline">¶</a></h4>
+<p>If you would like to run the test suite, create a database for testing like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mysql</span> <span class="o">-</span><span class="n">e</span> <span class="s1">&#39;create database test_pymysql  DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;&#39;</span>
+<span class="n">mysql</span> <span class="o">-</span><span class="n">e</span> <span class="s1">&#39;create database test_pymysql2 DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;&#39;</span>
+</pre></div>
+</div>
+<p>Then, copy the file <code class="docutils literal"><span class="pre">.travis/database.json</span></code> to <code class="docutils literal"><span class="pre">pymysql/tests/databases.json</span></code>
+and edit the new file to match your MySQL configuration:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ cp .travis/database.json pymysql/tests/databases.json
+$ $EDITOR pymysql/tests/databases.json
+</pre></div>
+</div>
+<p>To run all the tests, execute the script <code class="docutils literal"><span class="pre">runtests.py</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python runtests.py
+</pre></div>
+</div>
+<p>A <code class="docutils literal"><span class="pre">tox.ini</span></code> file is also provided for conveniently running tests on multiple
+Python versions:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ tox
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<span id="document-modules/index"></span><div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
+<p>If you are looking for information on a specific function, class or
+method, this part of the documentation is for you.</p>
+<p>For more information, please read the <a class="reference external" href="https://www.python.org/dev/peps/pep-0249">Python Database API specification</a>.</p>
+<div class="toctree-wrapper compound">
+<span id="document-modules/connections"></span><div class="section" id="module-pymysql.connections">
+<span id="connection-object"></span><h3>Connection Object<a class="headerlink" href="#module-pymysql.connections" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="pymysql.connections.Connection">
+<em class="property">class </em><code class="descclassname">pymysql.connections.</code><code class="descname">Connection</code><span class="sig-paren">(</span><em>host=None</em>, <em>user=None</em>, <em>password=''</em>, <em>database=None</em>, <em>port=0</em>, <em>unix_socket=None</em>, <em>charset=''</em>, <em>sql_mode=None</em>, <em>read_default_file=None</em>, <em>conv=None</em>, <em>use_unicode=None</em>, <em>client_flag=0</em>, <em>cursorclass=&lt;class 'pymysql.cursors.Cursor'&gt;</em>, <em>init_command=None</em>, <em>connect_timeout=10</em>, <em>ssl=None</em>, <em>read_default_group=None</em>, <em>compress=None</em>, <em>named_pipe=None</em>, <em>no_delay=None</em>, <em>autocommit=False</em>, <em>db=None</em>, <em>passwd=None</em>, <em>local_infile=False</em>, <em>max_allowed_packet=16777216</em>, <em>defer_connect=False</em>, <em>auth_plugin_map={}</em>, <em>read_timeout=None</em>, <em>write_timeout=None</em>, <em>bind_address=None</em>, <em>binary_prefix=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.connections.Connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Representation of a socket with a mysql server.</p>
+<p>The proper way to get an instance of this class is to call
+connect().</p>
+<p>Establish a connection to the MySQL database. Accepts several
+arguments:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>host</strong> – Host where the database server is located</li>
+<li><strong>user</strong> – Username to log in as</li>
+<li><strong>password</strong> – Password to use.</li>
+<li><strong>database</strong> – Database to use, None to not use a particular one.</li>
+<li><strong>port</strong> – MySQL port to use, default is usually OK. (default: 3306)</li>
+<li><strong>bind_address</strong> – When the client has multiple network interfaces, specify
+the interface from which to connect to the host. Argument can be
+a hostname or an IP address.</li>
+<li><strong>unix_socket</strong> – Optionally, you can use a unix socket rather than TCP/IP.</li>
+<li><strong>charset</strong> – Charset you want to use.</li>
+<li><strong>sql_mode</strong> – Default SQL_MODE to use.</li>
+<li><strong>read_default_file</strong> – Specifies  my.cnf file to read these parameters from under the [client] section.</li>
+<li><strong>conv</strong> – Conversion dictionary to use instead of the default one.
+This is used to provide custom marshalling and unmarshaling of types.
+See converters.</li>
+<li><strong>use_unicode</strong> – Whether or not to default to unicode strings.
+This option defaults to true for Py3k.</li>
+<li><strong>client_flag</strong> – Custom flags to send to MySQL. Find potential values in constants.CLIENT.</li>
+<li><strong>cursorclass</strong> – Custom cursor class to use.</li>
+<li><strong>init_command</strong> – Initial SQL statement to run when connection is established.</li>
+<li><strong>connect_timeout</strong> – Timeout before throwing an exception when connecting.
+(default: 10, min: 1, max: 31536000)</li>
+<li><strong>ssl</strong> – A dict of arguments similar to mysql_ssl_set()’s parameters.
+For now the capath and cipher arguments are not supported.</li>
+<li><strong>read_default_group</strong> – Group to read from in the configuration file.</li>
+<li><strong>compress</strong> – Not supported</li>
+<li><strong>named_pipe</strong> – Not supported</li>
+<li><strong>autocommit</strong> – Autocommit mode. None means use server default. (default: False)</li>
+<li><strong>local_infile</strong> – Boolean to enable the use of LOAD DATA LOCAL command. (default: False)</li>
+<li><strong>max_allowed_packet</strong> – Max size of packet sent to server in bytes. (default: 16MB)
+Only used to limit size of “LOAD LOCAL INFILE” data packet smaller than default (16KB).</li>
+<li><strong>defer_connect</strong> – Don’t explicitly connect on contruction - wait for connect call.
+(default: False)</li>
+<li><strong>auth_plugin_map</strong> – A dict of plugin names to a class that processes that plugin.
+The class will take the Connection object as the argument to the constructor.
+The class needs an authenticate method taking an authentication packet as
+an argument.  For the dialog plugin, a prompt(echo, prompt) method can be used
+(if no authenticate method) for returning a string from the user. (experimental)</li>
+<li><strong>db</strong> – Alias for database. (for compatibility to MySQLdb)</li>
+<li><strong>passwd</strong> – Alias for password. (for compatibility to MySQLdb)</li>
+<li><strong>binary_prefix</strong> – Add _binary prefix on bytes and bytearray. (default: False)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="pymysql.connections.Connection.autocommit_mode">
+<code class="descname">autocommit_mode</code><em class="property"> = None</em><a class="headerlink" href="#pymysql.connections.Connection.autocommit_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>specified autocommit mode. None means use server default.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.connections.Connection.begin">
+<code class="descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.connections.Connection.begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Begin transaction.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.connections.Connection.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.connections.Connection.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send the quit message and close the socket</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.connections.Connection.commit">
+<code class="descname">commit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.connections.Connection.commit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Commit changes to stable storage</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.connections.Connection.cursor">
+<code class="descname">cursor</code><span class="sig-paren">(</span><em>cursor=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.connections.Connection.cursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new cursor to execute queries with</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.connections.Connection.ping">
+<code class="descname">ping</code><span class="sig-paren">(</span><em>reconnect=True</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.connections.Connection.ping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the server is alive</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.connections.Connection.rollback">
+<code class="descname">rollback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.connections.Connection.rollback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Roll back the current transaction</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.connections.Connection.select_db">
+<code class="descname">select_db</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.connections.Connection.select_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set current db</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.connections.Connection.show_warnings">
+<code class="descname">show_warnings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.connections.Connection.show_warnings" title="Permalink to this definition">¶</a></dt>
+<dd><p>SHOW WARNINGS</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<span id="document-modules/cursors"></span><div class="section" id="module-pymysql.cursors">
+<span id="cursor-objects"></span><h3>Cursor Objects<a class="headerlink" href="#module-pymysql.cursors" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="pymysql.cursors.Cursor">
+<em class="property">class </em><code class="descclassname">pymysql.cursors.</code><code class="descname">Cursor</code><span class="sig-paren">(</span><em>connection</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.Cursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the object you use to interact with the database.</p>
+<p>Do not create an instance of a Cursor yourself. Call
+connections.Connection.cursor().</p>
+<dl class="method">
+<dt id="pymysql.cursors.Cursor.callproc">
+<code class="descname">callproc</code><span class="sig-paren">(</span><em>procname</em>, <em>args=()</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.Cursor.callproc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute stored procedure procname with args</p>
+<p>procname – string, name of procedure to execute on server</p>
+<p>args – Sequence of parameters to use with procedure</p>
+<p>Returns the original args.</p>
+<p>Compatibility warning: PEP-249 specifies that any modified
+parameters must be returned. This is currently impossible
+as they are only available by storing them in a server
+variable and then retrieved by a query. Since stored
+procedures return zero or more result sets, there is no
+reliable way to get at OUT or INOUT parameters via callproc.
+The server variables are named &#64;_procname_n, where procname
+is the parameter above and n is the position of the parameter
+(from zero). Once all result sets generated by the procedure
+have been fetched, you can issue a SELECT &#64;_procname_0, …
+query using .execute() to get any OUT or INOUT values.</p>
+<p>Compatibility warning: The act of calling a stored procedure
+itself creates an empty result set. This appears after any
+result sets generated by the procedure. This is non-standard
+behavior with respect to the DB-API. Be sure to use nextset()
+to advance through all result sets; otherwise you may get
+disconnected.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.Cursor.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.Cursor.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closing a cursor just exhausts all remaining data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.Cursor.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>query</em>, <em>args=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.Cursor.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute a query</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>query</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Query to execute.</li>
+<li><strong>args</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#tuple" title="(in Python v2.7)"><em>tuple</em></a><em>, </em><em>list</em><em> or </em><a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) – parameters used with query. (optional)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Number of affected rows</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>If args is a list or tuple, %s can be used as a placeholder in the query.
+If args is a dict, %(name)s can be used as a placeholder in the query.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.Cursor.executemany">
+<code class="descname">executemany</code><span class="sig-paren">(</span><em>query</em>, <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.Cursor.executemany" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run several data against one query</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>query</strong> – query to execute on server</li>
+<li><strong>args</strong> – Sequence of sequences or mappings.  It is used as parameter.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Number of rows affected, if any.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This method improves performance on multiple-row INSERT and
+REPLACE. Otherwise it is equivalent to looping over args with
+execute().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.Cursor.fetchall">
+<code class="descname">fetchall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.Cursor.fetchall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch all the rows</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.Cursor.fetchmany">
+<code class="descname">fetchmany</code><span class="sig-paren">(</span><em>size=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.Cursor.fetchmany" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch several rows</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.Cursor.fetchone">
+<code class="descname">fetchone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.Cursor.fetchone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch the next row</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymysql.cursors.Cursor.max_stmt_length">
+<code class="descname">max_stmt_length</code><em class="property"> = 1024000</em><a class="headerlink" href="#pymysql.cursors.Cursor.max_stmt_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Max statement size which <a class="reference internal" href="#pymysql.cursors.Cursor.executemany" title="pymysql.cursors.Cursor.executemany"><code class="xref py py-meth docutils literal"><span class="pre">executemany()</span></code></a> generates.</p>
+<p>Max size of allowed statement is max_allowed_packet - packet_header_size.
+Default value of max_allowed_packet is 1048576.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.Cursor.mogrify">
+<code class="descname">mogrify</code><span class="sig-paren">(</span><em>query</em>, <em>args=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.Cursor.mogrify" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the exact string that is sent to the database by calling the
+execute() method.</p>
+<p>This method follows the extension to the DB API 2.0 followed by Psycopg.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.Cursor.setinputsizes">
+<code class="descname">setinputsizes</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.Cursor.setinputsizes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Does nothing, required by DB API.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.Cursor.setoutputsizes">
+<code class="descname">setoutputsizes</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.Cursor.setoutputsizes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Does nothing, required by DB API.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pymysql.cursors.SSCursor">
+<em class="property">class </em><code class="descclassname">pymysql.cursors.</code><code class="descname">SSCursor</code><span class="sig-paren">(</span><em>connection</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.SSCursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unbuffered Cursor, mainly useful for queries that return a lot of data,
+or for connections to remote servers over a slow network.</p>
+<p>Instead of copying every row of data into a buffer, this will fetch
+rows as needed. The upside of this is the client uses much less memory,
+and rows are returned much faster when traveling over a slow network
+or if the result set is very big.</p>
+<p>There are limitations, though. The MySQL protocol doesn’t support
+returning the total number of rows, so the only way to tell how many rows
+there are is to iterate over every row returned. Also, it currently isn’t
+possible to scroll backwards, as only the current row is held in memory.</p>
+<dl class="method">
+<dt id="pymysql.cursors.SSCursor.fetchall">
+<code class="descname">fetchall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.SSCursor.fetchall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch all, as per MySQLdb. Pretty useless for large queries, as
+it is buffered. See fetchall_unbuffered(), if you want an unbuffered
+generator version of this method.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.SSCursor.fetchall_unbuffered">
+<code class="descname">fetchall_unbuffered</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.SSCursor.fetchall_unbuffered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch all, implemented as a generator, which isn’t to standard,
+however, it doesn’t make sense to return everything in a list, as that
+would use ridiculous memory for large result sets.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.SSCursor.fetchmany">
+<code class="descname">fetchmany</code><span class="sig-paren">(</span><em>size=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.SSCursor.fetchmany" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch many</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.SSCursor.fetchone">
+<code class="descname">fetchone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.SSCursor.fetchone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch next row</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymysql.cursors.SSCursor.read_next">
+<code class="descname">read_next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.SSCursor.read_next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read next row</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pymysql.cursors.DictCursor">
+<em class="property">class </em><code class="descclassname">pymysql.cursors.</code><code class="descname">DictCursor</code><span class="sig-paren">(</span><em>connection</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.DictCursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>A cursor which returns results as a dictionary</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pymysql.cursors.SSDictCursor">
+<em class="property">class </em><code class="descclassname">pymysql.cursors.</code><code class="descname">SSDictCursor</code><span class="sig-paren">(</span><em>connection</em><span class="sig-paren">)</span><a class="headerlink" href="#pymysql.cursors.SSDictCursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>An unbuffered cursor, which returns results as a dictionary</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Yutaka Matsubara and GitHub contributors.
+      
+        <span class="commit">
+          Revision <code>c51b47e3</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+          <dd><a href="/en/latest/">latest</a></dd>
+        
+          <dd><a href="/en/stable/">stable</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="//readthedocs.org/projects/pymysql/downloads/htmlzip/latest/">htmlzip</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>On Read the Docs</dt>
+          <dd>
+            <a href="//readthedocs.org/projects/pymysql/?fromdocs=pymysql">Project Home</a>
+          </dd>
+          <dd>
+            <a href="//readthedocs.org/builds/pymysql/?fromdocs=pymysql">Builds</a>
+          </dd>
+      </dl>
+      <hr/>
+      Free document hosting provided by <a href="http://www.readthedocs.org">Read the Docs</a>.
+
+    </div>
+  </div>
+
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.7.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
