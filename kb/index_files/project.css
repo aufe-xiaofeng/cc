@@ -1,0 +1,1656 @@
+body {
+	font: 12px/normal "Arial"; color: rgb(0, 0, 0); text-decoration: none; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255);
+}
+td {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+body.leftBody {
+	background-color: rgb(179, 216, 242);
+}
+.fieldName {
+	text-align: right; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold;
+}
+.fieldName2 {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold;
+}
+#header {
+	background-position: bottom; width: 100%; line-height: normal; font-size: 12px; float: left; background-image: url("../../img/menu_co/bg.gif"); background-repeat: repeat-x;
+}
+#header ul {
+	list-style: none; margin: 0px; padding: 0px 1px;
+}
+#header li {
+	background: url("../../img/menu_co/left_both.gif") no-repeat left top; margin: 0px; padding: 0px 0px 0px 3px; border-bottom-color: rgb(35, 139, 212); border-bottom-width: 1px; border-bottom-style: solid; float: left; white-space: nowrap;
+}
+#header {
+	background-position: bottom; width: 100%; line-height: normal; font-size: 11px; float: left; background-image: url("../../img/menu_co/bg.gif"); background-repeat: repeat-x;
+}
+#header ul {
+	list-style: none; margin: 0px; padding: 0px 1px; height: 24px;
+}
+#header li {
+	background: url("../../img/menu_co/left_both.gif") no-repeat left top; margin: 0px; padding: 0px 0px 0px 3px; height: 24px; border-bottom-color: rgb(35, 139, 212); border-bottom-width: 1px; border-bottom-style: solid; float: left; white-space: nowrap;
+}
+#header a {
+	background: url("../../img/menu_co/right_both.gif") no-repeat right top; padding: 5px 6px 3px 5px; width: 0.1em; height: 23px; color: rgb(102, 102, 102); font-weight: normal; text-decoration: none; float: left; display: block;
+}
+#header > ul a {
+	width: auto;
+}
+#header a {
+	float: none;
+}
+#header a:hover {
+	color: rgb(0, 0, 0);
+}
+#header li.selected {
+	background-position: 0px -150px; border-width: 0px; height: 24px;
+}
+#header li.selected a {
+	background-position: 100% -150px; height: 24px; color: rgb(0, 0, 0); padding-bottom: 4px; font-weight: bold;
+}
+#header li.selected a:hover {
+	background-position: 100% -150px; color: rgb(0, 0, 0); padding-bottom: 4px; font-weight: bold;
+}
+#header li:hover {
+	background-position: 0% -100px; color: rgb(0, 0, 0);
+}
+#header li:hover a {
+	background-position: 0% -100px; color: rgb(0, 0, 0);
+}
+#header li:hover a {
+	background-position: 100% -100px;
+}
+a:link {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+a:visited {
+	color: rgb(0, 0, 153); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+a:hover {
+	color: rgb(255, 102, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+a:active {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+.baselineF {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+.yellowColor {
+	color: rgb(51, 51, 51); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 153);
+}
+.greenColor {
+	color: rgb(51, 51, 51); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(217, 255, 195);
+}
+.blueColor {
+	color: rgb(51, 51, 51); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(195, 254, 255);
+}
+input.greenColorText {
+	border: 1px solid rgb(127, 157, 185); border-image: none; width: 156px; height: 21px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(217, 255, 195);
+}
+input.yellowColorText {
+	border: 1px solid rgb(127, 157, 185); border-image: none; width: 156px; height: 21px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 153);
+}
+input.blueColorText {
+	border: 1px solid rgb(127, 157, 185); border-image: none; width: 156px; height: 21px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(195, 254, 255);
+}
+input.add {
+	border: currentColor; border-image: none; width: 60px; height: 21px; background-image: url("../../img/icon/addGroup1.gif"); background-repeat: no-repeat;
+}
+input {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px;
+}
+input.text {
+	border: 1px solid rgb(127, 157, 185); border-image: none; width: 156px; height: 21px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+input.text1 {
+	border: 1px solid rgb(127, 157, 185); border-image: none; height: 21px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+input.textTwoDig {
+	border: 1px solid rgb(127, 157, 185); border-image: none; width: 18px; height: 15px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 9px; text-decoration: none; vertical-align: middle;
+}
+input.reset {
+	border: 1px solid rgb(127, 157, 185); border-image: none; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; vertical-align: middle; cursor: hand; background-image: url("../../img/button/bg_co.jpg");
+}
+input.radio {
+	color: rgb(0, 0, 0);
+}
+input.checkbox {
+	color: rgb(0, 0, 0);
+}
+input.submit {
+	border: 1px solid rgb(127, 157, 185); border-image: none; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; vertical-align: middle; cursor: hand; background-image: url("../../img/button/bg_co.jpg");
+}
+select {
+	border: 1px solid rgb(127, 157, 185); border-image: none; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px;
+}
+textarea {
+	border: 1px solid rgb(127, 157, 185); border-image: none; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px;
+}
+.textarea2 {
+	border: thin currentColor; border-image: none; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px;
+}
+.textarea_h20 {
+	border: 1px solid rgb(204, 204, 204); border-image: none; width: 422px; height: 16px; color: rgb(0, 0, 0); padding-top: 3px; padding-bottom: 3px; padding-left: 3px; font-family: "Arial"; font-size: 11px; vertical-align: top; background-color: rgb(255, 255, 255);
+}
+input.password {
+	border: 1px solid rgb(127, 157, 185); border-image: none; width: 156px; height: 21px; color: rgb(0, 0, 0);
+}
+input.image {
+	
+}
+input.hidden {
+	
+}
+input.file {
+	
+}
+input.cancel {
+	border: currentColor; border-image: none; width: 20px; height: 16px; cursor: hand; background-image: url("../../img/icon/cancel.gif"); background-repeat: no-repeat; background-color: rgb(204, 215, 235);
+}
+input.button {
+	border: 1px solid rgb(127, 157, 185); border-image: none; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; vertical-align: middle; cursor: hand; background-image: url("../../img/button/bg_co.jpg");
+}
+input.textYear {
+	border: 1px solid rgb(255, 255, 255); border-image: none; width: 32px; height: 17px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; vertical-align: middle;
+}
+input.textTime {
+	border: 1px solid rgb(255, 255, 255); border-image: none; width: 16px; height: 17px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; vertical-align: middle;
+}
+table.date {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.date td {
+	text-align: center;
+}
+table.date tr td.top {
+	background-position: bottom; width: 26px; height: 16px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; vertical-align: bottom; white-space: nowrap; background-image: url("../../img/menu_sa/titlebg.jpg"); background-color: rgb(120, 169, 218);
+}
+table.date td.selectedDay {
+	width: 26px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 204, 0);
+}
+table.date td.today {
+	width: 26px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(204, 255, 204);
+}
+table.date td.one {
+	text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-image: url("../../img/info/sortableBg.jpg"); background-color: rgb(242, 247, 251);
+}
+table.date td.one a:link {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.date td.one a:visited {
+	color: rgb(0, 0, 153); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.date td.one a:hover {
+	width: 26px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 204, 0);
+}
+table.date td.one a:active {
+	width: 26px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 204, 0);
+}
+table.date td.two {
+	background-position: center; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(225, 237, 255);
+}
+table.date td.two a:link {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.date td.two a:visited {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.date td.two a:hover {
+	width: 26px; color: rgb(255, 102, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 204, 0);
+}
+table.date td.two a:active {
+	width: 26px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 204, 0);
+}
+.timeinput {
+	border: 1px solid rgb(127, 157, 185); border-image: none; text-align: center; vertical-align: middle; background-color: rgb(255, 255, 255);
+}
+table.time tr td {
+	text-align: center; color: rgb(255, 255, 255); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-image: url("../../img/info/timeTopBg.jpg"); background-color: rgb(45, 106, 168);
+}
+table.time tr td a:link {
+	color: rgb(255, 255, 255); font-family: "Arial"; font-size: 11px; font-weight: bold;
+}
+table.time tr td a:visited {
+	color: rgb(255, 255, 255); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.time tr td a:hover {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.time tr td a:active {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.timeLine {
+	border: 2px solid rgb(32, 73, 115); border-image: none; text-align: center; font-family: "Arial"; background-color: rgb(221, 220, 210);
+}
+table.titlename {
+	height: 20px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-bottom-color: rgb(35, 139, 212); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; white-space: nowrap; background-image: url("../../img/info/sortableBg.jpg"); background-repeat: repeat-x; background-color: rgb(225, 237, 255);
+}
+table.titlenameTop {
+	border-color: rgb(107, 160, 214) rgb(35, 139, 212) rgb(35, 139, 212); height: 20px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-width: 3px; border-right-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-left-style: solid; white-space: nowrap; background-color: rgb(225, 237, 255);
+}
+table.titleGreat tr td {
+	height: 22px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-image: url("../../img/menu_co/titleGreatbg.jpg");
+}
+table.title tr td {
+	height: 24px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-image: url("../../img/menu_co/titlebg.jpg");
+}
+table.title tr td a.selected {
+	text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap;
+}
+table.title tr td.multi span.selected {
+	width: 26px; height: 20px; background-image: url("../../img/icon/multiAddBg.gif"); background-repeat: no-repeat;
+}
+table.title tr td.multi span {
+	width: 26px; height: 20px; background-image: url("../../img/icon/multiAddNoBg.gif"); background-repeat: no-repeat;
+}
+table.title tr td.multiPtf span.selected {
+	width: 26px; height: 20px; background-image: url("../../img/icon/multiPtfBg.gif"); background-repeat: no-repeat;
+}
+table.title tr td.multiPtf span {
+	width: 26px; height: 20px; background-image: url("../../img/icon/multiPtf.gif"); background-repeat: no-repeat;
+}
+table.title tr td.titleF a:link {
+	text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; white-space: nowrap;
+}
+table.title tr td.titleF a:visited {
+	text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; white-space: nowrap;
+}
+table.title tr td.titleF a:hover {
+	text-align: center; color: rgb(255, 102, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline; white-space: nowrap;
+}
+table.title tr td.titleF a:active {
+	text-align: center; color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline; white-space: nowrap;
+}
+table.title input.icon a:link {
+	
+}
+table.title input.icon a:visited {
+	
+}
+table.title input.icon a:hover {
+	background-position: center; width: 23px; height: 21px; background-image: url("../../img/icon/bgUp.gif"); background-repeat: no-repeat;
+}
+table.title input.icon a:active {
+	background-image: url("../../img/icon/bgDown.gif");
+}
+table.titleTopWhite {
+	border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(255, 255, 255);
+}
+table.titleTopWhiteNo {
+	border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+table.titleLine {
+	border: 1px solid rgb(103, 158, 214); border-image: none; background-color: rgb(255, 255, 255);
+}
+table.titleLine1 {
+	border-top-color: rgb(103, 158, 214); border-top-width: 1px; border-top-style: solid; background-color: rgb(255, 255, 255);
+}
+table.titleNoLine {
+	border-right-color: rgb(35, 139, 212); border-bottom-color: rgb(35, 139, 212); border-left-color: rgb(35, 139, 212); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);
+}
+table.titleNoTopLine {
+	background-color: rgb(255, 255, 255);
+}
+table.titleTopLine {
+	border: 1px solid rgb(255, 255, 255); border-image: none; background-color: rgb(255, 255, 255);
+}
+table.titleNoTop {
+	border-width: 2px 5px 5px; border-style: solid; border-color: rgb(255, 255, 255); background-color: rgb(255, 255, 255);
+}
+table.titleTopTRL {
+	background-color: rgb(255, 255, 255);
+}
+table.titleTopRL {
+	background-color: rgb(255, 255, 255);
+}
+table.titleTop {
+	background-color: rgb(255, 255, 255);
+}
+table.titleTopBg {
+	border-top-color: rgb(236, 233, 216); border-bottom-color: rgb(236, 233, 216); border-left-color: rgb(236, 233, 216); border-top-width: 10px; border-bottom-width: 10px; border-left-width: 10px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid; background-color: rgb(236, 233, 216);
+}
+table.titleTop5 {
+	border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(203, 245, 211);
+}
+table.titleTop4 {
+	border: 5px solid rgb(255, 255, 255); border-image: none; background-color: rgb(255, 255, 255);
+}
+table.titleTop3 {
+	border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 5px; border-bottom-width: 5px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(255, 255, 255);
+}
+table.titleTop2 {
+	border: 5px solid rgb(255, 255, 255); border-image: none; background-color: rgb(255, 255, 255);
+}
+table.titleTop1 {
+	border: 10px solid rgb(255, 255, 255); border-image: none; background-color: rgb(255, 255, 255);
+}
+table.titleTopMenu {
+	background-color: rgb(236, 233, 216);
+}
+table.displayTag tr td.colTitle {
+	height: 20px; text-align: left; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline; background-image: url("../../img/info/colTitleBg.jpg"); background-repeat: repeat-x; background-color: rgb(179, 216, 242);
+}
+table.displayTag tr td.colTitle a:link {
+	height: 20px; text-align: left; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTag tr td.colTitle a:visited {
+	height: 20px; text-align: left; color: rgb(0, 0, 153); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTag tr td.colTitle a:hover {
+	height: 20px; text-align: left; color: rgb(255, 102, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTag tr td.colTitle a:active {
+	height: 20px; text-align: left; color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTag tr td.totalTopGrey {
+	height: 20px; text-align: left; color: rgb(35, 139, 212); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 14px; font-weight: bold; text-decoration: none; border-top-color: rgb(204, 204, 204); border-top-width: 2px; border-top-style: solid; white-space: nowrap; background-color: rgb(238, 238, 238);
+}
+table.displayTag tr td.totalTop {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(130, 175, 221); border-top-width: 2px; border-top-style: solid; white-space: nowrap; background-color: rgb(232, 243, 255);
+}
+table.displayTag tr td.totalTop3 {
+	height: 20px; text-align: left; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-top-width: 2px; border-top-style: solid; white-space: nowrap; background-color: rgb(232, 243, 255);
+}
+table.displayTag tr td.totalTop4 {
+	height: 20px; text-align: left; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-top-width: 2px; border-top-style: solid; white-space: nowrap; background-color: rgb(247, 254, 241);
+}
+table.displayTag tr td.totalTopwhite {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; border-top-color: rgb(35, 139, 212); border-top-width: 2px; border-top-style: solid; white-space: nowrap; background-color: rgb(255, 255, 255);
+}
+table.displayTag tr td.totalBottomwhite {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; border-bottom-color: rgb(35, 139, 212); border-bottom-width: 2px; border-bottom-style: solid; white-space: nowrap; background-color: rgb(255, 255, 255);
+}
+table.displayTag td.totalTop2 {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-left-color: rgb(39, 142, 218); border-left-width: 2px; border-left-style: solid; white-space: nowrap; background-color: rgb(179, 216, 242);
+}
+table.displayTag tr td.total {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(130, 175, 221); border-top-width: 2px; border-top-style: solid; background-color: rgb(247, 254, 241);
+}
+table.displayTag tr td.total2 {
+	height: 20px; text-align: right; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-left-color: rgb(35, 139, 212); border-left-width: 2px; border-left-style: solid; white-space: nowrap; background-color: rgb(199, 255, 162);
+}
+table.displayTag tr td.total3 {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-left-color: rgb(35, 139, 212); border-top-width: 2px; border-left-width: 2px; border-top-style: solid; border-left-style: solid; background-color: rgb(199, 255, 162);
+}
+table.displayTag tr td.total4 {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-top-width: 2px; border-top-style: solid; background-color: rgb(238, 255, 179);
+}
+table.displayTag tr td.total5 {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-left-color: rgb(35, 139, 212); border-top-width: 2px; border-left-width: 2px; border-top-style: solid; border-left-style: solid; background-color: rgb(238, 255, 179);
+}
+table.displayTag tr td.total6 {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-top-width: 2px; border-top-style: solid; background-color: rgb(232, 243, 255);
+}
+table.displayTag tr.even {
+	height: 20px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.displayTag tr.evenfocus {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 251, 221);
+}
+table.displayTag tr.odd {
+	height: 20px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.displayTag tr.oddfocus {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 251, 221);
+}
+table.displayTag tr.oddSelected {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 151);
+}
+table.displayTag tr.evenSelected {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 151);
+}
+table.displayTag tr td.sortable {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(215, 231, 255);
+}
+table.displayTag tr td.sortable3 {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-image: url("../../img/info/sortableBg.jpg"); background-color: rgb(225, 237, 255);
+}
+table.displayTag tr td.sortable2 {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-image: url("../../img/info/sortableBg.jpg"); background-color: rgb(179, 216, 242);
+}
+table.displayTag th.sortable {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(225, 237, 255);
+}
+table.displayTag th.sortableGreen {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-image: url("../../img/info/sortableBgGreen.jpg"); background-color: rgb(225, 237, 255);
+}
+table.displayTag td.sortableGreen {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(209, 252, 214);
+}
+table.displayTag tr td {
+	height: 20px; padding-right: 5px; padding-left: 5px;
+}
+table.displayTag {
+	background-color: rgb(35, 139, 212);
+}
+table.displayTag2 {
+	background-color: rgb(255, 255, 255);
+}
+table.displayTag th.sortable a:link {
+	text-align: center; color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTag th.sortable a:visited {
+	text-align: center; color: rgb(0, 0, 153); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTag th.sortable a:hover {
+	text-align: center; color: rgb(255, 102, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTag th.sortable a:active {
+	text-align: center; color: rgb(255, 153, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTag tr.odd a:link {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTag tr.odd a:visited {
+	color: rgb(0, 0, 153); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTag tr.odd a:hover {
+	color: rgb(255, 102, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTag tr.odd a:active {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTag tr.even a:link {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTag tr.even a:visited {
+	color: rgb(0, 0, 153); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTag tr.even a:hover {
+	color: rgb(255, 102, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTag tr.even a:active {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTagTotal tr.evenfocus {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 251, 221);
+}
+table.displayTagTotal tr.oddfocus {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 251, 221);
+}
+table.displayTagTotal tr.oddSelected {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 151);
+}
+table.displayTagTotal tr.evenSelected {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 151);
+}
+table.displayTagTotal th.colTitle {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-image: url("../../img/info/colTitleBg.jpg"); background-repeat: repeat-x; background-color: rgb(207, 224, 240);
+}
+table.displayTagTotal th.colTitle a:link {
+	text-align: center; color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal th.colTitle a:visited {
+	text-align: center; color: rgb(0, 0, 153); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal th.colTitle a:hover {
+	text-align: center; color: rgb(255, 102, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal th.colTitle a:active {
+	text-align: center; color: rgb(255, 153, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal tr td.colTitle {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-image: url("../../img/info/colTitleBg.jpg"); background-repeat: repeat-x; background-color: rgb(179, 216, 242);
+}
+table.displayTagTotal tr td.colTitle a:link {
+	text-align: center; color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal tr td.colTitle a:visited {
+	text-align: center; color: rgb(0, 0, 153); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal tr td.colTitle a:hover {
+	text-align: center; color: rgb(255, 102, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal tr td.colTitle a:active {
+	text-align: center; color: rgb(255, 153, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal tr td.totalTopNoline {
+	height: 20px; text-align: left; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(179, 216, 242);
+}
+table.displayTagTotal tr td.totalTop {
+	height: 20px; text-align: left; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-top-width: 2px; border-top-style: solid; background-color: rgb(179, 216, 242);
+}
+table.displayTagTotal tr td.topWhite {
+	height: 20px; text-align: left; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(103, 158, 214); border-top-width: 1px; border-top-style: solid; background-color: rgb(255, 255, 255);
+}
+table.displayTagTotal th.totalTop2 {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-left-color: rgb(35, 139, 212); border-left-width: 2px; border-left-style: solid; background-color: rgb(179, 216, 242);
+}
+table.displayTagTotal td.totalTop2 {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-left-color: rgb(103, 158, 214); border-left-width: 2px; border-left-style: solid; background-color: rgb(225, 237, 255);
+}
+table.displayTagTotal tr td.total {
+	height: 20px; color: rgb(51, 51, 51); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-top-width: 2px; border-top-style: solid; background-color: rgb(199, 255, 162);
+}
+table.displayTagTotal tr td.totalIn {
+	color: rgb(51, 51, 51); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(199, 255, 162);
+}
+table.displayTagTotal tr td.total2 {
+	height: 20px; text-align: right; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-left-color: rgb(35, 139, 212); border-left-width: 2px; border-left-style: solid; background-color: rgb(199, 255, 162);
+}
+table.displayTagTotal tr td.total3 {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-left-color: rgb(35, 139, 212); border-top-width: 2px; border-left-width: 2px; border-top-style: solid; border-left-style: solid; background-color: rgb(199, 255, 162);
+}
+table.displayTagTotal tr td.total4 {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-top-width: 2px; border-top-style: solid; background-color: rgb(238, 255, 179);
+}
+table.displayTagTotal tr td.total5 {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(35, 139, 212); border-left-color: rgb(35, 139, 212); border-top-width: 2px; border-left-width: 2px; border-top-style: solid; border-left-style: solid; background-color: rgb(238, 255, 179);
+}
+table.displayTagTotal tr.even {
+	height: 20px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.displayTagTotal tr.odd {
+	height: 20px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.displayTagTotal th.sortable {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(225, 237, 255);
+}
+table.displayTagTotal tr td.sortableGreen {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(209, 252, 214);
+}
+table.displayTagTotal th.sortableGreen {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(209, 252, 214);
+}
+table.displayTagTotal tr td.sortable {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(225, 237, 255);
+}
+table.displayTagTotal tr td.sortable a:link {
+	text-align: center; color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal tr td.sortable a:visited {
+	text-align: center; color: rgb(0, 51, 153); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal tr td.sortable a:hover {
+	text-align: center; color: rgb(255, 102, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal tr td.sortable a:active {
+	text-align: center; color: rgb(255, 153, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal tr td {
+	height: 20px; padding-right: 5px; padding-left: 5px;
+}
+table.displayTagTotal {
+	background-color: rgb(35, 139, 212);
+}
+table.displayTagTotal th.sortable a:link {
+	text-align: center; color: rgb(0, 0, 0); font-size: 11px; text-decoration: underline;
+}
+table.displayTagTotal th.sortable a:visited {
+	text-align: center; color: rgb(0, 51, 153); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal th.sortable a:hover {
+	text-align: center; color: rgb(255, 153, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal th.sortable a:active {
+	text-align: center; color: rgb(255, 153, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagTotal tr.odd a:link {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTagTotal tr.odd a:visited {
+	color: rgb(0, 51, 153); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTagTotal tr.odd a:hover {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTagTotal tr.odd a:active {
+	color: rgb(0, 51, 153); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTagTotal tr.even a:link {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTagTotal tr.even a:visited {
+	color: rgb(0, 51, 153); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTagTotal tr.even a:hover {
+	color: rgb(255, 102, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTagTotal tr.even a:active {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.displayTagEdit tr.even {
+	height: 25px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-image: url("../../img/info/oddbg.gif"); background-color: rgb(230, 230, 230);
+}
+table.displayTagEdit tr.odd {
+	height: 25px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-image: url("../../img/info/oddbg.gif"); background-color: rgb(230, 230, 230);
+}
+table.displayTagEdit tr.evenfocus {
+	height: 25px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-image: url("../../img/info/oddbg.gif"); background-color: rgb(255, 251, 221);
+}
+table.displayTagEdit tr.oddfocus {
+	height: 25px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-image: url("../../img/info/oddbg.gif"); background-color: rgb(255, 251, 221);
+}
+table.displayTagEdit tr td.sortable {
+	height: 30px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(255, 255, 255);
+}
+table.displayTagEdit th.sortable {
+	height: 30px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(255, 255, 255);
+}
+table.displayTagEdit tr td {
+	padding-right: 5px; padding-left: 5px;
+}
+table.displayTagEdit {
+	background-color: rgb(255, 255, 255);
+}
+table.displayTagView tr.even {
+	height: 25px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-image: url("../../img/info/oddbg.gif"); background-color: rgb(230, 230, 230);
+}
+table.displayTagView tr.odd {
+	height: 25px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-image: url("../../img/info/oddbg.gif"); background-color: rgb(230, 230, 230);
+}
+table.displayTagView tr.evenfocus {
+	height: 25px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-image: url("../../img/info/oddbg.gif"); background-color: rgb(255, 251, 221);
+}
+table.displayTagView tr.oddfocus {
+	height: 25px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-image: url("../../img/info/oddbg.gif"); background-color: rgb(255, 251, 221);
+}
+table.displayTagView tr td.sortable {
+	height: 30px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(255, 255, 255);
+}
+table.displayTagView th.sortable {
+	height: 30px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(255, 255, 255);
+}
+table.displayTagView tr td {
+	padding-right: 5px; padding-left: 5px;
+}
+table.displayTagView {
+	background-color: rgb(255, 255, 255);
+}
+table.tableTree {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; background-color: rgb(35, 139, 212);
+}
+table.tableTree th {
+	height: 18px; padding-right: 5px; padding-left: 5px;
+}
+table.tableTree tr td.totalTop {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; border-top-color: rgb(35, 139, 212); border-top-width: 2px; border-top-style: solid;
+}
+table.tableTree tr.oddSelected {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 151);
+}
+table.tableTree tr.evenSelected {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 151);
+}
+table.tableTree tr.evenfocus {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 251, 221);
+}
+table.tableTree tr.oddfocus {
+	height: 20px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 251, 221);
+}
+table.tableTree tr td {
+	height: 18px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px;
+}
+table.tableTree tr td.selected {
+	height: 18px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; background-color: rgb(255, 255, 151);
+}
+table.tableTree th.sortableGreen {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-image: url("../../img/info/sortableBgGreen.jpg"); background-color: rgb(225, 237, 255);
+}
+table.tableTree th.sortable {
+	height: 18px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-image: url("../../img/info/sortableBg.jpg"); background-color: rgb(225, 237, 255);
+}
+table.tableTree td.sortableGreen {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-image: url("../../img/info/sortableBgGreen.jpg"); background-color: rgb(225, 237, 255);
+}
+table.tableTree td.sortable {
+	height: 18px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-image: url("../../img/info/sortableBg.jpg"); background-color: rgb(225, 237, 255);
+}
+table.tableTree th.sortable a:link {
+	text-align: center; color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.tableTree th.sortable a:visited {
+	text-align: center; color: rgb(0, 0, 153); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.tableTree th.sortable a:hover {
+	text-align: center; color: rgb(255, 102, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.tableTree th.sortable a:active {
+	text-align: center; color: rgb(255, 153, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.tableTree tr.even {
+	height: 20px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.tableTree tr.odd {
+	height: 20px; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.leftMenu tr td.firstLevel {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap;
+}
+table.leftMenu tr td {
+	font-family: "Arial"; text-decoration: none; white-space: nowrap;
+}
+table.leftMenu tr td a:link {
+	color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.leftMenu tr td a.default:visited {
+	color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.leftMenu tr td a.default:hover {
+	color: rgb(255, 153, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.leftMenu tr td a.default:active {
+	color: rgb(255, 204, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.leftMenu a.selected {
+	color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.leftMenu tr td a.boldDefault:visited {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.leftMenu tr td a.boldDefault:hover {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.leftMenu tr td a.boldDefault:active {
+	color: rgb(255, 204, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.leftMenu a.boldSelected {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.pageHeader {
+	
+}
+.topF {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.pageHeader tr td.top {
+	height: 20px; text-align: left; border-top-color: rgb(35, 139, 212); border-right-color: rgb(35, 139, 212); border-left-color: rgb(35, 139, 212); border-top-width: 3px; border-right-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-left-style: solid; white-space: nowrap; background-color: rgb(179, 216, 242);
+}
+table.pageHeader tr td.top2 {
+	border-width: 3px 1px 1px; border-style: solid; border-color: rgb(35, 139, 212); height: 20px; background-color: rgb(179, 216, 242);
+}
+table.pageHeader span.pagelinks {
+	color: rgb(102, 102, 102); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.pageHeader span.pagelinks strong {
+	color: rgb(255, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.pageHeader span.pagelinks a:link {
+	color: rgb(102, 102, 102); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.pageHeader span.pagelinks a:visited {
+	color: rgb(102, 102, 102); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.pageHeader span.pagelinks a:hover {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.pageHeader .pagebanner {
+	color: rgb(102, 102, 102); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.tree a.default:link {
+	color: rgb(135, 151, 171); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.tree a.default:visited {
+	color: rgb(0, 51, 255); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.tree a.default:hover {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.tree a.selected {
+	color: rgb(153, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+.star {
+	width: 11px; text-align: left; color: rgb(255, 102, 0); font-family: "Verdana"; font-size: 11px; font-weight: bold; text-decoration: none; margin-top: 3px; vertical-align: middle;
+}
+.Line {
+	background-position: center; height: 2px; background-image: url("../../img/bg/lineBg.gif"); background-repeat: repeat-x;
+}
+.Line6 {
+	background-position: center; height: 2px; background-image: url("../../img/bg/lineBg1.gif"); background-repeat: repeat-x;
+}
+.Line2 {
+	background-position: center; height: 2px; background-image: url("../../img/bg/left_line.gif"); background-repeat: repeat-x;
+}
+.Line3 {
+	background-position: center; height: 2px; background-image: url("../../img/bg/line3.gif"); background-repeat: repeat-x;
+}
+.Line4 {
+	background-position: center; height: 2px; background-image: url("../../img/bg/left_line.gif"); background-repeat: repeat-x;
+}
+.Linetop {
+	background-position: center; height: 1px; background-color: rgb(35, 139, 212);
+}
+.pageAlign {
+	text-align: left;
+}
+.explainLeftF {
+	height: 10px; text-align: right; color: rgb(102, 102, 102); font-family: "Arial"; font-size: 11px; font-weight: bold; vertical-align: text-top;
+}
+.explainF {
+	color: rgb(102, 102, 102); font-family: "Arial"; font-size: 10px; background-color: rgb(240, 245, 251);
+}
+table.explain {
+	background-color: rgb(126, 173, 220);
+}
+table.explainDay {
+	vertical-align: top; background-color: rgb(126, 173, 220);
+}
+table.explainDay tr td.dayTop {
+	text-align: center; color: rgb(38, 90, 142); padding-right: 2px; padding-left: 2px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(225, 237, 255);
+}
+table.explainDay tr td.dayTop1 {
+	text-align: left; color: rgb(38, 90, 142); padding-right: 2px; padding-left: 2px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(225, 237, 255);
+}
+table.explainDay tr td.dayF {
+	width: 35px; height: 14px; text-align: center; color: rgb(102, 102, 102); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.explainDay tr td.dayF2 {
+	text-align: center; color: rgb(102, 102, 102); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; white-space: nowrap; background-color: rgb(255, 255, 255);
+}
+table.noPadding tr td {
+	padding: 0px; height: 16px;
+}
+table.noPadding2 tr td {
+	padding: 0px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.noPadding2 tr td.Padding1 {
+	padding: 0px; height: 16px;
+}
+table.noPadding2 tr td.Padding2 {
+	padding: 0px; height: 1px;
+}
+table.noPaddingTime {
+	background-color: rgb(130, 175, 221);
+}
+table.noPaddingTime tr td.sortable {
+	text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(225, 237, 255);
+}
+table.noPaddingTime tr td.even {
+	color: rgb(37, 88, 139); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(240, 245, 251);
+}
+table.noPaddingTime tr td.even-lastmonth a:link {
+	color: rgb(204, 204, 204); font-size: 11px; text-decoration: none;
+}
+table.noPaddingTime tr td.even-lastmonth a:visited {
+	color: rgb(204, 204, 204); font-size: 11px; text-decoration: none;
+}
+table.noPaddingTime tr td.even-lastmonth a:hover {
+	color: rgb(255, 153, 0); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.eventoday {
+	color: rgb(37, 88, 139); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(149, 184, 227);
+}
+table.noPaddingTime tr td.even a:link {
+	color: rgb(39, 94, 148); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.even a:visited {
+	color: rgb(0, 51, 153); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.even a:hover {
+	color: rgb(255, 153, 0); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.even a:active {
+	color: rgb(0, 0, 0); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.oddBg {
+	vertical-align: top; background-color: rgb(255, 255, 255);
+}
+table.noPaddingTime tr td.oddBg2 {
+	background-color: rgb(255, 255, 255);
+}
+.even2 {
+	color: rgb(255, 208, 208); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.noPaddingTime tr td.even2 {
+	color: rgb(37, 88, 139); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 208, 208);
+}
+table.noPaddingTime tr td.even2 a:link {
+	color: rgb(39, 94, 148); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.even2 a:visited {
+	color: rgb(0, 51, 153); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.even2 a:hover {
+	color: rgb(255, 153, 0); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.even2 a:active {
+	color: rgb(0, 0, 0); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.even2-lastmonth {
+	color: rgb(204, 204, 204); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 208, 208);
+}
+table.noPaddingTime tr td.even2-lastmonth a:link {
+	color: rgb(204, 204, 204); font-size: 11px; text-decoration: none;
+}
+table.noPaddingTime tr td.even2-lastmonth a:visited {
+	color: rgb(204, 204, 204); font-size: 11px; text-decoration: none;
+}
+table.noPaddingTime tr td.even2-lastmonth a:hover {
+	color: rgb(255, 153, 0); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.even2-lastmonth a:active {
+	color: rgb(0, 0, 0); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.even3 {
+	background-position: right; height: 10px; text-align: right; color: rgb(255, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(240, 245, 251);
+}
+table.noPaddingTime tr td.even3 a:link {
+	color: rgb(255, 0, 0); font-size: 11px; font-weight: bold; text-decoration: underline; background-color: rgb(255, 0, 0);
+}
+table.noPaddingTime tr td.even3 a:visited {
+	color: rgb(255, 0, 0); font-size: 11px; font-weight: bold; text-decoration: underline; background-color: rgb(255, 0, 0);
+}
+table.noPaddingTime tr td.even3 a:hover {
+	color: rgb(255, 255, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.noPaddingTime tr td.even3 a:active {
+	color: rgb(255, 255, 255); font-size: 11px; font-weight: bold; text-decoration: underline; background-color: rgb(255, 0, 0);
+}
+table.noPaddingTime tr td.odd {
+	height: 100px; color: rgb(102, 102, 102); font-family: "Arial"; font-size: 11px; text-decoration: none; vertical-align: top; background-color: rgb(255, 255, 255);
+}
+table.noPaddingTime tr td.odd a:link {
+	color: rgb(102, 102, 102); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.odd a:visited {
+	color: rgb(0, 51, 153); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.odd a:hover {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.odd a:active {
+	color: rgb(0, 51, 153); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.rainbow {
+	text-decoration: none; vertical-align: middle; background-color: rgb(255, 255, 255);
+}
+table.noPaddingTime tr td.rainbowtoday {
+	text-decoration: none; vertical-align: middle;
+}
+table.noPaddingTime tr td.rainbow1 {
+	width: 6px; height: 15px; vertical-align: top; background-image: url("../../img/rainbow/rainbow1.gif"); background-repeat: no-repeat; background-color: rgb(247, 247, 247);
+}
+table.noPaddingTime tr td.rainbow1_1 {
+	width: 6px; height: 15px; vertical-align: top; background-image: url("../../img/rainbow/rainbow1-1.gif"); background-repeat: no-repeat; background-color: rgb(247, 247, 247);
+}
+table.noPaddingTime tr td.rainbow1_2 {
+	width: 6px; height: 15px; vertical-align: top; background-image: url("../../img/rainbow/rainbow1-2.gif"); background-repeat: no-repeat; background-color: rgb(247, 247, 247);
+}
+table.noPaddingTime tr td.rainbow2 {
+	width: 6px; height: 15px; vertical-align: top; background-image: url("../../img/rainbow/rainbow2.gif"); background-repeat: no-repeat; background-color: rgb(247, 247, 247);
+}
+table.noPaddingTime tr td.rainbow3 {
+	width: 6px; height: 15px; vertical-align: top; background-image: url("../../img/rainbow/rainbow3.gif"); background-repeat: no-repeat;
+}
+table.noPaddingTime tr td.rainbow4 {
+	width: 6px; height: 15px; vertical-align: top; background-image: url("../../img/rainbow/rainbow4.gif"); background-repeat: no-repeat; background-color: rgb(247, 247, 247);
+}
+table.noPaddingTime tr td.rainbow5 {
+	width: 6px; height: 15px; vertical-align: top; background-image: url("../../img/rainbow/rainbow5.gif"); background-repeat: no-repeat; background-color: rgb(247, 247, 247);
+}
+table.noPaddingTime tr td.rainbow6 {
+	width: 6px; height: 15px; vertical-align: top; background-image: url("../../img/rainbow/rainbow6.gif"); background-repeat: no-repeat; background-color: rgb(247, 247, 247);
+}
+table.noPaddingTime tr td.rainbow7 {
+	width: 6px; height: 17px; vertical-align: top; background-image: url("../../img/rainbow/rainbow7.gif"); background-repeat: no-repeat;
+}
+table.noPaddingTime tr td.rainbow8 {
+	width: 6px; height: 16px; vertical-align: top; background-image: url("../../img/rainbow/rainbow8.gif"); background-repeat: no-repeat; background-color: rgb(247, 247, 247);
+}
+table.noPaddingTime tr td.rainbow9 {
+	width: 6px; height: 15px; vertical-align: top; background-image: url("../../img/rainbow/rainbow9.gif"); background-repeat: no-repeat; background-color: rgb(247, 247, 247);
+}
+table.noPaddingTime tr td.rainbow10 {
+	width: 6px; height: 15px; vertical-align: top; background-image: url("../../img/rainbow/rainbow10.gif"); background-repeat: no-repeat; background-color: rgb(151, 151, 151);
+}
+table.noPaddingTime tr td.rainbowTop1 {
+	vertical-align: top; background-color: rgb(255, 153, 0);
+}
+table.noPaddingTime tr td.rainbowTop2 {
+	vertical-align: top; background-color: rgb(255, 60, 60);
+}
+table.noPaddingTime tr td.rainbowTop3 {
+	vertical-align: top; background-color: rgb(119, 220, 138);
+}
+table.noPaddingTime tr td.rainbowTop4 {
+	vertical-align: top; background-color: rgb(157, 48, 163);
+}
+table.noPaddingTime tr td.rainbowTop5 {
+	vertical-align: top; background-color: rgb(0, 102, 102);
+}
+table.noPaddingTime tr td.rainbowTop6 {
+	vertical-align: top; background-color: rgb(102, 204, 0);
+}
+table.noPaddingTime tr td.rainbowTop7 {
+	vertical-align: top; background-color: rgb(116, 241, 228);
+}
+table.noPaddingTime tr td.rainbowTop8 {
+	vertical-align: top; background-color: rgb(104, 195, 237);
+}
+table.noPaddingTime tr td.rainbowTop9 {
+	vertical-align: top; background-color: rgb(255, 208, 208);
+}
+table.noPaddingTime tr td.rainbowTop10 {
+	vertical-align: top; background-color: rgb(151, 151, 151);
+}
+table.noPaddingTime tr.totalcolor {
+	background-color: rgb(247, 254, 241);
+}
+table.errorLine {
+	border: 1px solid rgb(204, 153, 102);
+}
+table.error {
+	border: 5px solid rgb(255, 255, 230); border-image: none; background-color: rgb(255, 255, 230);
+}
+table.errorF td {
+	color: rgb(255, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.errorF td.errorTop {
+	color: rgb(255, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+.alert {
+	width: 32px; height: 32px; background-image: url("../../img/en/alert.gif"); background-repeat: no-repeat;
+}
+.errorSpot {
+	width: 10px; height: 16px; background-image: url("../../img/icon/errorSpot.gif"); background-repeat: no-repeat;
+}
+table.menubg {
+	text-decoration: none; border-right-color: rgb(46, 94, 141); border-bottom-color: rgb(46, 94, 141); border-left-color: rgb(96, 150, 205); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; background-image: url("../../img/menu_sa/menubg.jpg"); background-repeat: repeat-y;
+}
+table.menubgLine {
+	height: 1px; background-color: rgb(96, 150, 205);
+}
+table.menuLine {
+	height: 8px; background-image: url("../../img/menu_sa/line.gif"); background-repeat: repeat-x;
+}
+table.menubgF tr td {
+	background-position: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none; vertical-align: middle;
+}
+table.menubgF tr td.menuF a:link {
+	background-position: center; height: 18px; color: rgb(0, 0, 0); padding-right: 8px; padding-left: 8px; font-family: "Arial"; font-size: 11px; text-decoration: none; vertical-align: middle;
+}
+table.menubgF tr td.menuF a:visited {
+	background-position: center; height: 18px; color: rgb(0, 0, 0); padding-right: 8px; padding-left: 8px; font-family: "Arial"; font-size: 11px; text-decoration: none; vertical-align: middle;
+}
+table.menubgF tr td.menuF a:hover {
+	background-position: center; width: 100%; height: 18px; color: rgb(0, 0, 0); padding-right: 8px; padding-left: 8px; font-family: "Arial"; font-size: 11px; text-decoration: none; vertical-align: middle;
+}
+table.menubgF tr td.menuF a:active {
+	background-position: center; width: 100%; height: 18px; color: rgb(0, 0, 0); padding-right: 8px; padding-left: 8px; font-family: "Arial"; font-size: 11px; text-decoration: none; vertical-align: middle;
+}
+table.menubgF tr.selected {
+	width: 100%; cursor: hand; background-color: rgb(255, 204, 102);
+}
+table.multiLine {
+	height: 6px; background-image: url("../../img/menu_sa/multiLine.gif"); background-repeat: repeat-x;
+}
+table.multiAddLine {
+	height: 1px; background-color: rgb(102, 102, 102);
+}
+table.multiAddLine2 {
+	height: 1px; background-color: rgb(255, 246, 177);
+}
+table.multiAdd {
+	text-decoration: none; border-right-color: rgb(102, 102, 102); border-bottom-color: rgb(102, 102, 102); border-left-color: rgb(102, 102, 102); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);
+}
+table.multiAdd2 {
+	text-decoration: none; border-top-color: rgb(102, 102, 102); border-right-color: rgb(102, 102, 102); border-left-color: rgb(102, 102, 102); border-top-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);
+}
+table.multiAddBg {
+	border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-right-width: 2px; border-bottom-width: 2px; border-right-style: inset; border-bottom-style: inset; background-color: rgb(255, 255, 255);
+}
+table.multiAddBg2 {
+	border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-top-width: 1px; border-right-width: 2px; border-top-style: solid; border-right-style: inset; background-color: rgb(255, 255, 255);
+}
+table.multiAddF tr td {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.multiAddF tr td.AddF a:link {
+	width: 100%; color: rgb(0, 0, 0); padding-right: 3px; padding-left: 3px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.multiAddF tr td.AddF a:visited {
+	width: 100%; color: rgb(0, 0, 0); padding-right: 3px; padding-left: 3px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.multiAddF tr td.AddF a:hover {
+	width: 100%; color: rgb(0, 0, 0); padding-right: 3px; padding-left: 3px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.multiAddF tr td.AddF a:active {
+	width: 100%; color: rgb(0, 0, 0); padding-right: 3px; padding-left: 3px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.multiAddF tr.selected {
+	width: 100%; cursor: hand; background-color: rgb(255, 204, 102);
+}
+table.multiAddF tr td.AddF label {
+	width: 100%; color: rgb(0, 0, 0); padding-right: 3px; padding-left: 3px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.displayTagPercent {
+	background-color: rgb(126, 173, 220);
+}
+table.displayTagPercent td.framebg {
+	background-color: rgb(255, 255, 255);
+}
+table.displayTagPercent td.frameLine {
+	border: 1px solid rgb(126, 173, 220); border-image: none; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.displayTagPercent td.leftLine {
+	color: rgb(102, 102, 102); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; border-left-color: rgb(126, 173, 220); border-left-width: 1px; border-left-style: solid;
+}
+table.displayTagPercent td.leftBaseLine {
+	color: rgb(102, 102, 102); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; border-bottom-color: rgb(126, 173, 220); border-left-color: rgb(126, 173, 220); border-bottom-width: 1px; border-left-width: 1px; border-bottom-style: solid; border-left-style: solid;
+}
+table.displayTagPercent td.baseLine {
+	color: rgb(102, 102, 102); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; border-bottom-color: rgb(126, 173, 220); border-bottom-width: 1px; border-bottom-style: solid;
+}
+table.displayTagPercent td.noLine {
+	color: rgb(102, 102, 102); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+table.displayTagPercent td.odd {
+	color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.displayTagPercent td.odd a:link {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagPercent td.odd a:visited {
+	color: rgb(0, 51, 153); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagPercent td.odd a:hover {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagPercent td.odd a:active {
+	color: rgb(0, 51, 153); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagPercent th.sortable {
+	height: 20px; text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(225, 237, 255);
+}
+table.displayTagPercent tr.sortable {
+	text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: rgb(225, 237, 255);
+}
+table.displayTagPercent tr.sortable a:link {
+	text-align: center; color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagPercent tr.sortable a:visited {
+	text-align: center; color: rgb(0, 0, 153); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagPercent tr.sortable a:hover {
+	text-align: center; color: rgb(255, 153, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.displayTagPercent tr.sortable a:active {
+	text-align: center; color: rgb(255, 153, 0); font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+img.buttonImg {
+	cursor: hand;
+}
+table.home {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+.linehome {
+	height: 1px; background-image: url("../../img/home/line.jpg"); background-repeat: repeat-x;
+}
+.linehome2 {
+	background-position: center; margin-top: 5px; margin-bottom: 5px; background-image: url("../../img/home/line2.jpg"); background-repeat: repeat-y;
+}
+.linehomebg {
+	background-color: rgb(11, 127, 174);
+}
+table.home tr .hometopf {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 14px; font-weight: bold; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.home tr .hometopf a:link {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 14px; font-weight: bold; text-decoration: none;
+}
+table.home tr .hometopf a:visited {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 14px; font-weight: bold; text-decoration: none;
+}
+table.home tr .hometopf a:hover {
+	color: rgb(255, 102, 0); font-family: "Arial"; font-size: 14px; font-weight: bold; text-decoration: underline;
+}
+table.home tr .hometopf a:active {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 14px; font-weight: bold; text-decoration: none;
+}
+table.home tr .homenumber {
+	color: rgb(255, 51, 51); text-indent: 5pt; font-family: "Arial"; font-size: 16px; font-weight: bold; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.home tr .hometopf2 {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.home tr .hometopf2 a:link {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.home tr .hometopf2 a:visited {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.home tr .hometopf2 a:hover {
+	color: rgb(255, 102, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: underline;
+}
+table.home tr .hometopf2 a:active {
+	color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+table.home tr .homenumber2 {
+	color: rgb(255, 51, 51); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.home tr td.odd {
+	color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; background-color: rgb(255, 255, 255);
+}
+table.home tr td.odd a:link {
+	width: 100%; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px;
+}
+table.home tr td.odd a:visited {
+	width: 100%; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px;
+}
+table.home tr td.odd a:hover {
+	width: 100%; color: rgb(255, 102, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.home tr td.odd a:active {
+	width: 100%; color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px;
+}
+table.home tr td.eventop {
+	text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-image: url("../../img/info/sortableBg.jpg"); background-repeat: repeat-x; background-color: rgb(225, 239, 246);
+}
+table.home tr td.even {
+	color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(225, 239, 246);
+}
+table.home tr td.even a:link {
+	width: 100%; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px;
+}
+table.home tr td.even a:visited {
+	width: 100%; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px;
+}
+table.home tr td.even a:hover {
+	width: 100%; color: rgb(255, 102, 0); font-family: "Arial"; font-size: 11px; text-decoration: underline;
+}
+table.home tr td.even a:active {
+	width: 100%; color: rgb(255, 153, 0); font-family: "Arial"; font-size: 11px;
+}
+.pBottom1 {
+	width: 21px; height: 16px; background-image: url("../../img/home/p_bottom1.jpg"); background-repeat: no-repeat;
+}
+.pBottom2 {
+	height: 16px; background-image: url("../../img/home/p_bottom2.jpg"); background-repeat: repeat-x;
+}
+.pBottom3 {
+	width: 21px; height: 16px; background-image: url("../../img/home/p_bottom3.jpg"); background-repeat: no-repeat;
+}
+.pBottom4 {
+	width: 21px; background-image: url("../../img/home/p_bottom4.jpg"); background-repeat: repeat-y;
+}
+.pBottom5 {
+	width: 21px; background-image: url("../../img/home/p_bottom5.jpg"); background-repeat: repeat-y;
+}
+.pBottom6 {
+	width: 21px; height: 16px; background-image: url("../../img/home/p_bottom6.jpg"); background-repeat: no-repeat;
+}
+.pBottom7 {
+	height: 16px; background-image: url("../../img/home/p_bottom7.jpg"); background-repeat: repeat-x;
+}
+.pBottom8 {
+	width: 21px; height: 16px; background-image: url("../../img/home/p_bottom8.jpg"); background-repeat: no-repeat;
+}
+.pBottom9 {
+	background-color: rgb(255, 255, 255);
+}
+.pHometopf {
+	text-align: right; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 14px; font-weight: bold; text-decoration: none;
+}
+.pHometopf2 {
+	text-align: left; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 14px; text-decoration: none;
+}
+.pHometop {
+	text-align: center; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+.pHometop4 {
+	color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+.pHometop2 {
+	text-align: left; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(225, 239, 246);
+}
+.pHometop3 {
+	text-align: left; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+.importframe {
+	border: 1px inset rgb(255, 255, 255); border-image: none;
+}
+.legend {
+	color: rgb(36, 140, 213); font-family: "Arial"; font-size: 14px; font-weight: bold; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+table.fieldsettop {
+	border-top-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-left-color: rgb(255, 255, 255); border-top-width: 8px; border-right-width: 0px; border-left-width: 10px; border-top-style: solid; border-right-style: solid; border-left-style: solid;
+}
+.infoBg1 {
+	width: 11px; height: 16px; background-image: url("../../img/home/bg1.gif"); background-repeat: no-repeat;
+}
+.infoBg2 {
+	height: 16px; background-image: url("../../img/home/bg2.gif"); background-repeat: repeat-x;
+}
+.infoBg3 {
+	width: 11px; height: 16px; background-image: url("../../img/home/bg3.gif"); background-repeat: no-repeat;
+}
+.infoBg4 {
+	width: 11px; background-image: url("../../img/home/bg4.gif"); background-repeat: repeat-y;
+}
+.infoBg5 {
+	width: 11px; padding-right: 8px; background-image: url("../../img/home/bg5.gif"); background-repeat: repeat-y;
+}
+.infoBg6 {
+	width: 11px; height: 16px; background-image: url("../../img/home/bg6.gif"); background-repeat: no-repeat;
+}
+.infoBg8 {
+	width: 11px; height: 16px; background-image: url("../../img/home/bg8.gif"); background-repeat: no-repeat;
+}
+.crBg {
+	background-position: top; border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 5px; border-bottom-width: 5px; border-top-style: solid; border-bottom-style: solid; background-image: url("../../img/bg/crbg.gif"); background-repeat: repeat-x; background-color: rgb(255, 255, 255);
+}
+.crBg2 {
+	background-position: top; border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 5px; border-bottom-width: 5px; border-top-style: solid; border-bottom-style: solid; background-image: url("../../img/bg/crbg2.gif"); background-repeat: repeat-x; background-color: rgb(255, 255, 255);
+}
+.commitment1 {
+	color: rgb(35, 140, 210); font-family: "Arial"; font-size: 14px; font-weight: bolder;
+}
+.commitment2 {
+	color: rgb(102, 102, 102); font-family: "Arial"; font-size: 11px; font-weight: bold; word-spacing: 2pt;
+}
+.commitment3 {
+	color: rgb(51, 51, 51); font-family: "Arial"; font-size: 14px; font-weight: bolder;
+}
+.hometop1 {
+	color: rgb(35, 139, 212); padding-right: 10px; font-family: "Arial"; font-size: 14px; font-weight: bolder; background-color: rgb(255, 255, 255);
+}
+.hometopBg1red {
+	color: rgb(255, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 12px; font-weight: bold; background-color: rgb(255, 255, 255);
+}
+.hometopBg1red2 {
+	color: rgb(255, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold;
+}
+.hometopBg0 {
+	background-color: rgb(255, 255, 255);
+}
+.hometopBg000 {
+	width: 2px; background-image: url("../../img/bg/hometopBg000.gif"); background-repeat: repeat-y;
+}
+.hometopBg4 {
+	padding-right: 5px; padding-left: 5px; background-color: rgb(255, 255, 255);
+}
+.hometopBg1 {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; background-color: rgb(255, 255, 255);
+}
+.hometopBg5 {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; background-color: rgb(255, 255, 255);
+}
+.hometopBg5 a:link {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.hometopBg5 a:visited {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.hometopBg5 a:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.hometopBg5 a:active {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.hometopBg111 {
+	color: rgb(36, 140, 213); font-family: "Arial"; font-size: 11px; font-weight: bold; background-color: rgb(255, 255, 255);
+}
+.hometopBg11 {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 9px; background-color: rgb(255, 255, 255);
+}
+.hometopBg2 {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; background-color: rgb(225, 239, 246);
+}
+.hometopBg3 {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; background-color: rgb(240, 247, 250);
+}
+.hometopBg4 {
+	height: 20px; color: rgb(0, 0, 0); padding-right: 0px; padding-left: 0px; font-family: "Arial"; font-size: 11px; background-color: rgb(240, 247, 250);
+}
+.hometopBg1green {
+	background-color: rgb(118, 220, 137);
+}
+.hometopBg2green {
+	background-color: rgb(228, 247, 157);
+}
+.hometopBg1ash {
+	background-color: rgb(235, 235, 235);
+}
+.hometopBg2ash {
+	background-color: rgb(157, 157, 157);
+}
+.hometopBg1redbg {
+	background-color: rgb(204, 0, 0);
+}
+.hometopBg1AnyCost {
+	background-color: rgb(251, 109, 106);
+}
+.hometopBg1Preempt {
+	background-color: rgb(251, 202, 59);
+}
+.hometopBg1Gradation {
+	background-color: rgb(104, 195, 237);
+}
+.hometopBg2Gradation {
+	background-color: rgb(35, 139, 212);
+}
+.hometopBg3Gradation {
+	color: rgb(255, 255, 255); font-family: "Arial"; font-size: 11px; font-weight: bold; background-color: rgb(147, 200, 236);
+}
+.hometopBg33Gradation {
+	color: rgb(255, 255, 255); font-family: "Arial"; font-size: 11px; background-color: rgb(240, 240, 240);
+}
+.hometopBg4Gradation {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; background-color: rgb(216, 235, 248);
+}
+.hometopBg1Yield {
+	background-color: rgb(184, 222, 76);
+}
+.grayness {
+	background-color: rgb(204, 204, 204);
+}
+.blueness {
+	background-color: rgb(104, 195, 237);
+}
+.redness {
+	background-color: rgb(255, 102, 102);
+}
+.grassiness {
+	background-color: rgb(119, 220, 138);
+}
+.homeftop {
+	color: rgb(35, 139, 212); text-transform: none; padding-right: 10px; padding-left: 10px; font-family: "Arial"; font-size: 12px; font-weight: bolder; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+.homeftop1 {
+	color: rgb(35, 139, 212); font-family: "Arial"; font-size: 14px; font-weight: bolder; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+.homeftop2 {
+	color: rgb(35, 139, 212); text-transform: none; font-family: "Arial"; font-size: 12px; font-weight: bolder; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+.homebody1 {
+	border-right-color: rgb(227, 227, 227); border-bottom-color: rgb(223, 223, 223); border-right-width: 2px; border-bottom-width: 2px; border-right-style: inset; border-bottom-style: inset;
+}
+.homebody2 {
+	border: 1px solid rgb(9, 123, 173); border-image: none; background-color: rgb(255, 255, 255);
+}
+table.homebody3 {
+	height: 21px; background-image: url("../../img/home/topbg.jpg"); background-repeat: repeat-x;
+}
+.homebody4 {
+	border-width: 5px 10px 10px; border-style: solid; border-color: rgb(255, 255, 255);
+}
+.homebody5 {
+	border-width: 8px 10px 10px; border-style: solid; border-color: rgb(255, 255, 255);
+}
+.calendartoday {
+	height: 100px; color: rgb(102, 102, 102); font-family: "Arial"; font-size: 11px; text-decoration: none; vertical-align: top; background-color: rgb(255, 255, 210);
+}
+.calendarmove {
+	height: 100px; color: rgb(102, 102, 102); font-family: "Arial"; font-size: 11px; text-decoration: none; vertical-align: top; background-color: rgb(236, 255, 217);
+}
+.calendartitle {
+	color: rgb(0, 0, 0); font-family: " Arial"; font-size: 11px; background-color: rgb(215, 231, 255);
+}
+.calendartitle2 {
+	color: rgb(153, 153, 153); font-family: " Arial"; font-size: 11px; background-color: rgb(225, 237, 255);
+}
+.calendar_popup {
+	border: 1px solid rgb(0, 102, 204); border-image: none; color: rgb(0, 0, 0); line-height: 16px; font-family: Arial; font-size: 11px; background-color: rgb(240, 245, 251);
+}
+.calendar_popup a:link {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+.calendar_popup a:visited {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+.calendar_popup a:hover {
+	color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; text-decoration: none;
+}
+.calendar_popupmouseon {
+	color: rgb(0, 0, 0); background-color: rgb(186, 208, 252);
+}
+.calendar_popupmonth {
+	border-width: 1px 0px; border-style: solid none; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(0, 102, 204); border-bottom-color: rgb(0, 102, 204); background-color: rgb(240, 245, 251);
+}
+.calendar_popupmonth2 {
+	border-width: 1px 0px; border-style: solid none; color: rgb(255, 255, 255); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; border-top-color: rgb(0, 102, 204); border-bottom-color: rgb(0, 102, 204); background-color: rgb(186, 208, 252);
+}
+.lastmonth {
+	height: 20px; color: rgb(153, 153, 153); font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(242, 249, 253);
+}
+table.noPaddingTime tr td.hiden {
+	text-decoration: none; vertical-align: middle; table-layout: fixed;
+}
+.ctl {
+	table-layout: fixed;
+}
+.ctl td {
+	padding: 0px 2px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.ctl th {
+	padding: 2px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.ctl2 {
+	table-layout: fixed;
+}
+.ctl2 td {
+	padding: 2px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.ctl2 th {
+	overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.ctlForTextIcon {
+	table-layout: fixed;
+}
+.ctlForTextIcon td {
+	overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.ctlForTextIcon th {
+	overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.fixed {
+	table-layout: fixed;
+}
+table.fixed td.ellipsis {
+	padding: 2px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+table.fixed th.ellipsis {
+	padding: 2px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+table.noPaddingTime tr td.lastmonth2 {
+	color: rgb(153, 153, 153); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(240, 245, 251);
+}
+table.noPaddingTime tr td.lastmonth2 a:link {
+	color: rgb(204, 204, 204); font-size: 11px; text-decoration: none;
+}
+table.noPaddingTime tr td.lastmonth2 a:visited {
+	color: rgb(204, 204, 204); font-size: 11px; text-decoration: none;
+}
+table.noPaddingTime tr td.lastmonth2 a:hover {
+	color: rgb(255, 153, 0); font-size: 11px; text-decoration: underline;
+}
+table.noPaddingTime tr td.lastmonth3 {
+	color: rgb(153, 153, 153); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(255, 208, 208);
+}
+table.noPaddingTime tr td.lastmonth3 a:link {
+	color: rgb(204, 204, 204); font-size: 11px; text-decoration: none;
+}
+table.noPaddingTime tr td.lastmonth3 a:visited {
+	color: rgb(204, 204, 204); font-size: 11px; text-decoration: none;
+}
+table.noPaddingTime tr td.lastmonth3 a:hover {
+	color: rgb(255, 153, 0); font-size: 11px; text-decoration: underline;
+}
+.calendarpostil {
+	padding: 3px; border: 1px solid rgb(255, 222, 91); border-image: none; color: rgb(0, 0, 0); font-family: Arial; font-size: 11px; background-color: rgb(255, 255, 193);
+}
+.dashboardtitlered {
+	padding: 2px 10px; color: rgb(255, 255, 255); text-transform: none; font-family: "Arial"; font-size: 12px; font-weight: bolder; text-decoration: none; background-color: rgb(204, 0, 0);
+}
+.dashboardtitlepurple {
+	padding: 2px 10px; color: rgb(255, 255, 255); text-transform: none; font-family: "Arial"; font-size: 12px; font-weight: bolder; text-decoration: none; background-color: rgb(173, 130, 221);
+}
+.dashboardtitlegreen {
+	padding: 2px 10px; color: rgb(255, 255, 255); text-transform: none; font-family: "Arial"; font-size: 12px; font-weight: bolder; text-decoration: none; background-color: rgb(102, 204, 0);
+}
+.dashboardtitleblue {
+	padding: 2px 10px; color: rgb(255, 255, 255); text-transform: none; font-family: "Arial"; font-size: 12px; font-weight: bolder; text-decoration: none; background-color: rgb(98, 146, 228);
+}
+.dashboardtitleblue2 {
+	padding: 2px 10px; color: rgb(255, 255, 255); text-transform: none; font-family: "Arial"; font-size: 12px; font-weight: bolder; text-decoration: none; background-color: rgb(170, 197, 240);
+}
+.dashboardtitleyellow {
+	padding: 2px 10px; color: rgb(255, 255, 255); text-transform: none; font-family: "Arial"; font-size: 12px; font-weight: bolder; text-decoration: none; background-color: rgb(255, 135, 15);
+}
+table.titleLine2 {
+	border: 1px solid rgb(35, 139, 212); border-image: none; background-color: rgb(233, 240, 254);
+}
+.scale {
+	border-width: 1px; border-style: none none none solid; border-color: rgb(0, 102, 255); height: 8px; font-size: 5px;
+}
+.scale02 {
+	border: 1px rgb(0, 102, 255); height: 5px; font-size: 5px;
+}
+.scaleborder {
+	border-width: 1px; border-style: none solid solid; border-color: rgb(0, 102, 255); height: 8px; font-size: 5px; background-color: rgb(255, 255, 255);
+}
+.timesheet_project {
+	background-color: rgb(240, 245, 251);
+}
+.timesheet_today {
+	font-family: "Arial"; font-size: 11px; background-color: rgb(255, 255, 210);
+}
+input.hidden01 {
+	border-width: 0px; width: 40px; height: 21px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: normal; text-decoration: none; background-color: rgb(232, 243, 255);
+}
+input.hidden02 {
+	border-width: 0px; width: 40px; height: 21px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(240, 245, 251);
+}
+input.hidden_whiteBg {
+	border-width: 0px; width: 40px; height: 16px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: normal; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+input.hidden_whiteBg_bold {
+	border-width: 0px; width: 40px; height: 16px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+input.hidden_blueBg {
+	border-width: 0px; width: 40px; height: 16px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(187, 221, 255);
+}
+input.hidden_lightblueBg {
+	border-width: 0px; width: 40px; height: 16px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(226, 237, 255);
+}
+input.hidden_greenBg {
+	border-width: 0px; width: 40px; height: 16px; text-align: center; color: rgb(0, 0, 0); font-family: "Arial"; font-size: 11px; font-weight: bold; text-decoration: none; background-color: rgb(247, 254, 241);
+}
+.timesheet_date {
+	color: rgb(0, 0, 0); font-family: " Arial"; font-size: 11px; font-weight: bold; background-color: rgb(196, 219, 255);
+}
+table.noPaddingTime tr td.even4 {
+	color: rgb(37, 88, 139); padding-right: 5px; padding-left: 5px; font-family: "Arial"; font-size: 11px; text-decoration: none; background-color: rgb(215, 231, 255);
+}
+.font_yellow {
+	color: rgb(255, 153, 0); font-family: " Arial"; font-size: 11px;
+}
+.icon_content {
+	color: rgb(17, 42, 187); font-size: 11px; font-weight: normal; text-decoration: underline; cursor: hand;
+}
+.nopermission {
+	color: rgb(168, 171, 164); font-family: " Arial"; font-size: 11px; font-weight: normal; text-decoration: underline;
+}
+table.multiAddF .nopermission {
+	color: rgb(168, 171, 164); font-family: " Arial"; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+.progress_yellow {
+	background-color: rgb(255, 204, 0);
+}
+.progress_orange {
+	background-color: rgb(255, 153, 0);
+}
+.line_rightspace {
+	border-right-color: rgb(255, 255, 255); border-right-width: 10px; border-right-style: solid;
+}
