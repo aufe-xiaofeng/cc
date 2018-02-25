@@ -1,128 +1,58 @@
-<!DOCTYPE HTML>
-<html>
+﻿<html>
 <head>
-<title>2019考研倒计时</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Glory Coming soon template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs Sign up Web Templates, 
- Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-
-<!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="css/jquery.countdown.css" />
-
-<!--fonts--> 
-<link href="//fonts.googleapis.com/css?family=Bellefair&amp;subset=hebrew,latin-ext" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Rambla:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<!--//fonts--> 
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
+<meta http-equiv="Content-Type" mrc="text/html; charset=utf-8">
+<title>考研倒计时</title>
+<script language="JavaScript"> 
+<!-- hide script from old browser
+var DifferenceHour = -1
+var DifferenceMinute = -1
+var DifferenceSecond = -1
+var Tday = new Date("December 22, 2018 00:00:00")   //**倒计时时间点-注意格式
+var daysms = 24 * 60 * 60 * 1000
+var hoursms = 60 * 60 * 1000
+var Secondms = 60 * 1000
+var microsecond = 1000 
+function clock()
+{
+var time = new Date()
+var hour = time.getHours()
+var minute = time.getMinutes()
+var second = time.getSeconds()
+var timevalue = ""+((hour > 12) ? hour-12:hour)
+timevalue +=((minute < 10) ? ":0":":")+minute
+timevalue +=((second < 10) ? ":0":":")+second
+timevalue +=((hour >12 ) ? " PM":" AM")
+// document.formnow.now.value = timevalue
+var convertHour = DifferenceHour
+var convertMinute = DifferenceMinute
+var convertSecond = DifferenceSecond
+var Diffms = Tday.getTime() - time.getTime()
+DifferenceHour = Math.floor(Diffms / daysms)
+Diffms -= DifferenceHour * daysms
+DifferenceMinute = Math.floor(Diffms / hoursms)
+Diffms -= DifferenceMinute * hoursms
+DifferenceSecond = Math.floor(Diffms / Secondms)
+Diffms -= DifferenceSecond * Secondms
+var dSecs = Math.floor(Diffms / microsecond)
+if(convertHour != DifferenceHour) document.formnow.dd.value=DifferenceHour
+if(convertMinute != DifferenceMinute) document.formnow.hh.value=DifferenceMinute
+if(convertSecond != DifferenceSecond) document.formnow.mm.value=DifferenceSecond
+document.formnow.ss.value=dSecs
+// document.formnow.Tnow.value= DifferenceHour DifferenceMinute + DifferenceSecond + dSecs
+setTimeout("clock()",1000)
+} 
+// end hiding --> 
+</script>
 </head>
-<body>
-	<div class="w3layouts-banner-slider">
-			<div class="container">
-				<div class="slider">
-					<div class="callbacks_container">
-						<ul class="rslides callbacks callbacks1" id="slider4">
-							<li>
-								<div class="agileits-banner-info">
-									<div class="banner-dot"></div>
-								</div>
-							</li>
-							<li>
-								<div class="agileits-banner-info agileits-banner-info1">
-									<div class="banner-dot"></div>
-								</div>
-							</li>
-							<li>
-								<div class="agileits-banner-info agileits-banner-info2">
-									<div class="banner-dot"></div>
-								</div>
-							</li>
-							<li>
-								<div class="agileits-banner-info agileits-banner-info3">
-									<div class="banner-dot"></div>
-								</div>
-							</li>
-							
-						</ul>
-					</div>
-					<script src="js/responsiveslides.min.js"></script>
-					<script>
-						// You can also use "$(window).load(function() {"
-						$(function () {
-						  // Slideshow 4
-						  $("#slider4").responsiveSlides({
-							auto: true,
-							pager:true,
-							nav:false,
-							speed: 500,
-							namespace: "callbacks",
-							before: function () {
-							  $('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-							  $('.events').append("<li>after event fired.</li>");
-							}
-						  });
-					
-						});
-					 </script>
-					<!--banner Slider starts Here-->
-				</div>
-			</div>
-	</div>
-    <div class="bg agile">
-     	<div class="container">
-			<div class="main">
-				<div class="header">
-					<h1>研路漫漫<span>有你有我</span></h1>
-				</div>
-				<!--newsletter-->
-	<div class="newsletter w3l-agile">
-		<!--<div class="email-text">
-		<p>Subscribe </p>
-			</div>
-				<!--	<div class="email">
-			<form action="#" method="post">
-				<input placeholder="Enter your E-mail" name="email" class="mail" type="email" required="">
-				<input type="submit" value="subscribe">
-			</form>
-		</div>
-		<div class="clear"></div>
-	</div>-->
-<!--//newsletter-->
 
-				<div class="content">
-					<div class="content2">
-						<div class="timer_wrap">
-							<div id="counter"> </div>		
-						</div>
-					</div>
-					
-				</div><!--
-				<div class="agileinfo-social-grids">
-						<ul>
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-rss"></i></a></li>
-							<li><a href="#"><i class="fa fa-vk"></i></a></li>
-						</ul>
-					</div>	-->
-<p></p>
-				<div class="footer">
-					<p>©2018 aufe-xiaofeng | Design by <a href="https://i.fengge475.cn" target="_blank">xiaofeng</a></p>
-				</div>
-			</div>
-        </div>
-   </div>
-<!--js-->
-<script src="js/jquery.countdown.js"></script>
-<script src="js/script.js"></script>
-<!--js-->
+<body onload="clock();return true">
 
+距20019考研还有：<br>
+<form name="formnow">
+	<input name="dd" type="text" style="border:0;" size="2"> 天 
+	<input name="hh" type="text" style="border:0;" size="2"> 小时 
+	<input name="mm" type="text" style="border:0;" size="2"> 分 
+	<input name="ss" type="text" style="border:0;" size="2"> 秒 
+</form>
 </body>
-</html>	
+</html>
